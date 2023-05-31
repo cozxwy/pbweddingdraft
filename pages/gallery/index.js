@@ -13,7 +13,7 @@ function index(){
     <Navbar />
     <div>
     <br></br>   <br></br>   <br></br>   <br></br>   <br></br>
-        <p>Locations</p>  
+        <p>Gallery</p>  
       
     </div>
     <Footbar />

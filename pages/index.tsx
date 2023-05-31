@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import {FormEvent, useState} from "react";
 import Navbar from './component/Navbar';
 import Footbar from './component/Footbar';
-
+import Link from 'next/link'
 
 
 const Home: NextPage = () => {
