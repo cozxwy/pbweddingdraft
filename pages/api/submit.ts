@@ -50,8 +50,8 @@ export default async function handler(
         return res.status(201).json({
             data: response.data
         })
-    }catch (e instanceof Error) {
-        return res.status(e.code).send({message: e.message})
+    }catch (e) {
+       // return res.status(e.code).send({message: e.message})
     }
 
 }
