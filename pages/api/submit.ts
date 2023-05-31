@@ -4,9 +4,11 @@ import {google} from "googleapis";
 
 type SheetForm = {
     name: string
-    email: string
+    follow: string
     phone: string
     message: string
+    
+    team:string
 }
 
 export default async function handler(
@@ -43,7 +45,7 @@ export default async function handler(
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
-                    [body.name, body.email, body.phone, body.message]
+                    [body.name,'', body.follow, body.phone, body.message, body.team]
                 ]
             }
         });
