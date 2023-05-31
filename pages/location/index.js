@@ -9,7 +9,7 @@ function index(){
   return (
     <>
 
-<main classNames="bg-gray-900 min-h-screen ">
+<main className="bg-gray-900 min-h-screen ">
     <Navbar />
     <div>
     <br></br>   <br></br>   <br></br>   <br></br>   <br></br>
