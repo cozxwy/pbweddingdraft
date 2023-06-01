@@ -12,6 +12,7 @@ function index(){
 
 <main className="bg-gray-900 min-h-screen  ">
     <Navbar />
+    <Footbar />
     <div>
     <br></br>   <br></br>   <br></br>   <br></br>   <br></br>
        
@@ -26,7 +27,7 @@ function index(){
 
       
     </div>
-    <Footbar />
+    
 
     </main>
     </>

@@ -3,7 +3,7 @@ import {FormEvent, useState} from "react";
 import Navbar from './component/Navbar';
 import Footbar from './component/Footbar';
 import Link from 'next/link'
-
+import { version } from 'react';
 
 const Home: NextPage = () => {
     const [name, setName] = useState('');
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     const [follow, setFollow] = useState('');
     const [message, setMessage] = useState('');
 
-    
+    console.log(version);
 
     
     const [team, setTeam] = useState('');
@@ -97,24 +97,30 @@ const Home: NextPage = () => {
                     <div className="flex items-center justify-center">
                  
 <h3 className="sr-only">Identification</h3>
-<ul className="text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md">
-    <li className="inline-block pr-3  border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white rounded-md">
+<ul className=" space-x-4 text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md">
+    <li className=" w-1/2 inline-block  border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white rounded-md">
         <div className="flex items-center pl-3">
             <input id="radioGirl" type="radio" value="girl" onChange={e => setTeam('girl')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-            <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">&nbsp;ฝ่ายเจ้าสาว&nbsp; </label>
+            <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">ทีมเจ้าสาว </label>
         </div>
     </li>
-    <li className=" mx-2 pr-3 inline-block border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white   rounded-md">
-        <div className="flex items-center pl-3">
+    <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white   rounded-md">
+        <div className="flex items-center pl-3 ">
             <input id="radioBoy" type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-            <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ฝ่ายเจ้าบ่าว&nbsp;</label>
+            <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ทีมเจ้าบ่าว&nbsp;&nbsp;&nbsp;</label>
         </div>
     </li>
    
 </ul>
 
+
+
                 </div>
                    
+
+
+
+
 
 
                     <div className="flex items-center justify-center">
