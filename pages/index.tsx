@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import {FormEvent, useState} from "react";
 import Navbar from './component/Navbar';
 import Footbar from './component/Footbar';
-import MotionX from './component/MotionX';
 
 import { version } from 'react';
 
