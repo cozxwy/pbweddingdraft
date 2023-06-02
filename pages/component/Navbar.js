@@ -1,7 +1,18 @@
 import Link from 'next/link'
+import Head from 'next/head';
 
 export default function Navbar() {
-    return <header className=' w-full h-16  border-gray-200 dark:bg-gray-800  fixed  text-white text-2xl'>
+    return <>
+    <Head>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" cossOrigin/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+</link>
+</Head>
+    <header className=' w-full h-16  border-gray-200 dark:bg-gray-800  fixed  text-white text-2xl'>
+
+    
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 ">
  
         <div className="flex flex-wrap justify-between items-center  mx-auto max-w-screen-xl">
@@ -24,5 +35,7 @@ export default function Navbar() {
         
     </nav>
 </header>
+
+</>
 ;
   }

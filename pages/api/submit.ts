@@ -55,6 +55,7 @@ export default async function handler(
         })
     }catch (e) {
        // return res.status(e.code).send({message: e.message})
+       console.log(e)
     }
 
 }

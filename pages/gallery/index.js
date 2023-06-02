@@ -3,6 +3,7 @@ import Footbar from '../component/Footbar';
 import React from 'react';
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
+import { motion } from 'framer-motion';
 
 
 function index(){
@@ -12,7 +13,20 @@ function index(){
 <main className="bg-gray-900 min-h-screen ">
     <Navbar />
     <div>
-       <br></br>      <br></br>
+
+
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="h-screen flex items-center justify-center"
+    >
+      <div className="text-white text-3xl">
+      
+      <br></br>      <br></br>
+      <br></br>      <br></br>
+      <br></br>      <br></br>
         <p>Gallery</p>  
 
         
@@ -55,9 +69,23 @@ function index(){
     </div>
 </div>
 
+
+      </div>
+    </motion.div>
+
+
+
+    <br></br>
+
+<br></br>
         <br></br>
 
         <br></br>
+        <br></br>
+
+        <br></br>
+    
+
     </div>
     <Footbar />
 
