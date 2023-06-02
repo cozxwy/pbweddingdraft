@@ -7,8 +7,9 @@ type SheetForm = {
     follow: string
     phone: string
     message: string
-    
+    license_plate:string
     team:string
+    timestamp:string
 }
 
 export default async function handler(
@@ -45,7 +46,7 @@ export default async function handler(
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
-                    [body.name,'', body.follow, body.phone, body.message, body.team]
+                    [body.timestamp,'',body.name,'', body.phone, body.follow, '',body.message, body.team , body.license_plate]
                 ]
             }
         });

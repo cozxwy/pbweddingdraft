@@ -12,9 +12,10 @@ const Home: NextPage = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
+    const [license_plate, setlicense_plate] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
-  
+    
     const handleClickLoad = () => {
      
     };
@@ -34,14 +35,17 @@ const Home: NextPage = () => {
 
         setIsLoading(true);
   
-      
+        console.log(Date.now())
+        const timestamp = new Date().toLocaleString() + ""
 
         let form = {
+            timestamp,
             name,
             email,
             phone,
             message,
             follow,
+            license_plate,
             team
         }
 
@@ -75,6 +79,7 @@ const Home: NextPage = () => {
         setEmail('')
         setFollow('default')
         setTeam('')
+        setlicense_plate('')
     }
 
     return (
@@ -93,7 +98,6 @@ const Home: NextPage = () => {
 <br></br>
 <br></br>
 
-<br></br>
 
 
 <motion.div
@@ -107,14 +111,20 @@ const Home: NextPage = () => {
        
       <form className="py-4 space-y-4" onSubmit={handleSubmit}>
                     <div className="flex items-center justify-center">
-                        <label htmlFor="name" className="sr-only">ชื่อ นามสกุล</label>
+                        <label htmlFor="name" className="sr-only">ชื่อ นามสกุล *</label>
                         <input required   autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
-                        shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl font-sans md:font-serif" placeholder="ชื่อ นามสกุล" />
+                        shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl font-sans md:font-serif" placeholder="ชื่อ นามสกุล *" />
                     </div>
                   
                     <div className="flex items-center justify-center">
-                        <label htmlFor="phone" className="sr-only">เบอร์ติดต่อ</label>
-                        <input value={phone} required autoComplete="off" onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="เบอร์ติดต่อ" />
+                        <label htmlFor="phone" className="sr-only">เบอร์ติดต่อ *</label>
+                        <input value={phone} required autoComplete="off" onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="เบอร์ติดต่อ *" />
+                    
+                    </div>
+
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="license_plate" className="sr-only">ทะเบียนรถ</label>
+                        <input value={license_plate}  autoComplete="off" onChange={e => setlicense_plate(e.target.value)} type="text" name="license_plate" id="license_plate" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="ทะเบียนรถยนต์" />
                     </div>
 
                     <div className="flex items-center justify-center">
@@ -161,17 +171,32 @@ const Home: NextPage = () => {
                     <div className="flex items-center justify-center">
                         <label htmlFor="message" className="sr-only">อวยพร</label>
                         <textarea value={message}  autoComplete="off" onChange={e => setMessage(e.target.value)} id="message" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="อวยพรบ่าวสาว" />
+                 
                     </div>
+                    <div className="flex items-center justify-center  ">
+
+
+                    <label className="relative inline-flex items-center cursor-pointer">
+  <input type="checkbox" value="" className="sr-only peer" required />
+  <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">ยินดีให้ใช้และเปิดเผยข้อมูลส่วนบุคคล</span> 
+  
+</label>
+
+
+                  
+                    </div>
+
                     <div className="flex items-center justify-center">
                     {/*    <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-xl shadow py-3 px-2 text-white bg-indigo-600">ยืนยัน</button>  */}
                        {/*<ButtonLoading2 /> */}
 
                     
-
+                       
     <button 
      type="submit"
       onClick={handleClickLoad}
-      className={`flex items-center justify-center text-sm w-64 rounded-xl shadow py-3 px-2 text-white bg-indigo-600 ${
+      className={`flex items-center justify-center text-sm w-64 rounded-xl shadow py-3 px-2 text-white bg-primary-600 ${
         isLoading ? 'opacity-50 cursor-not-allowed rounded-xl' : ''
       }`}
       disabled={isLoading}
