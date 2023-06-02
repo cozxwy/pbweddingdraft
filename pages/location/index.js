@@ -32,9 +32,12 @@ function index(){
       
        <p className="m-5 max-w-lg text-xl font-semibold leading-loose text-gray-900 dark:text-white text-center mx-auto">   Grand Ballrom CDC <br></br> เลียบด่วนรามอินทรา <br></br> วันที่ 26 / 08 / 2023 </p>
       
-       <br></br>
+       <div className="bg-gradient-to-r from-yellow-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% rounded-md h-15 text-center align-middle "><p className='text-black'> Dress Code</p></div>
+
+<br></br>
+<br></br>
        <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
-       <img className=" animate-pulse h-20 mx-auto max-w-xs rounded-lg shadow-xl dark:shadow-gray-800" src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
+       <img className=" animate-pulse h-20 mx-auto max-w-xs rounded-lg shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
        </Link>
       </div>
     </motion.div>
