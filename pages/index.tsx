@@ -12,9 +12,12 @@ const Home: NextPage = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-
     const [isLoading, setIsLoading] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+  
+    const handleClickLoad = () => {
+     
+    };
 
 
     const [follow, setFollow] = useState('');
@@ -28,6 +31,10 @@ const Home: NextPage = () => {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        setIsLoading(true);
+  
+      
 
         let form = {
             name,
@@ -49,14 +56,24 @@ const Home: NextPage = () => {
         const content = await rawResponse.json();
 
         // print to screen
-        alert(content.data.tableRange)
+        //alert(content.data.tableRange)
+        setIsSuccess(true);
 
+        setTimeout(() => {
+            setIsLoading(false);
+            setIsSuccess(false);
+          }, 5000);
+
+
+
+       
+          
         // Reset the form fields
         setMessage('')
         setPhone('')
         setName('')
         setEmail('')
-        setFollow('')
+        setFollow('default')
         setTeam('')
     }
 
@@ -77,8 +94,6 @@ const Home: NextPage = () => {
 <br></br>
 
 <br></br>
-<br></br>
-<br></br>
 
 
 <motion.div
@@ -93,13 +108,13 @@ const Home: NextPage = () => {
       <form className="py-4 space-y-4" onSubmit={handleSubmit}>
                     <div className="flex items-center justify-center">
                         <label htmlFor="name" className="sr-only">ชื่อ นามสกุล</label>
-                        <input  autoComplete="new-password" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
+                        <input required   autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
                         shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl font-sans md:font-serif" placeholder="ชื่อ นามสกุล" />
                     </div>
                   
                     <div className="flex items-center justify-center">
                         <label htmlFor="phone" className="sr-only">เบอร์ติดต่อ</label>
-                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="เบอร์ติดต่อ" />
+                        <input value={phone} required autoComplete="off" onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="เบอร์ติดต่อ" />
                     </div>
 
                     <div className="flex items-center justify-center">
@@ -126,7 +141,7 @@ const Home: NextPage = () => {
     </li>
     <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white   rounded-xl">
         <div className="flex items-center pl-3 ">
-            <input id="radioBoy" type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+            <input id="radioBoy"  type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
             <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ทีมเจ้าบ่าว&nbsp;&nbsp;&nbsp;</label>
         </div>
     </li>
@@ -145,17 +160,60 @@ const Home: NextPage = () => {
 
                     <div className="flex items-center justify-center">
                         <label htmlFor="message" className="sr-only">อวยพร</label>
-                        <textarea value={message} onChange={e => setMessage(e.target.value)} id="message" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="อวยพรบ่าวสาว" />
+                        <textarea value={message}  autoComplete="off" onChange={e => setMessage(e.target.value)} id="message" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="อวยพรบ่าวสาว" />
                     </div>
                     <div className="flex items-center justify-center">
-                     <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-xl shadow py-3 px-2 text-white bg-indigo-600">ยืนยัน</button> 
+                    {/*    <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-xl shadow py-3 px-2 text-white bg-indigo-600">ยืนยัน</button>  */}
                        {/*<ButtonLoading2 /> */}
+
+                    
+
+    <button 
+     type="submit"
+      onClick={handleClickLoad}
+      className={`flex items-center justify-center text-sm w-64 rounded-xl shadow py-3 px-2 text-white bg-indigo-600 ${
+        isLoading ? 'opacity-50 cursor-not-allowed rounded-xl' : ''
+      }`}
+      disabled={isLoading}
+    >
+        {/* {isLoading ? (isSuccess ? 'สำเร็จแล้ว' : 'กำลังส่งข้อมูล...') : 'ยืนยัน'} */}      
+      
+      
+      {isLoading ? 'กำลังส่งข้อมูล...': 'ยืนยัน'}
+    </button>
+
 
 
                     </div>
                 </form>
 
       </div>
+
+
+{isSuccess ?  <>
+<motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className=""
+    >
+      <div className=" content-center">
+      <div className="content-center p-4 mb-4 m-5 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+            <span className="font-medium">ลงทะเบียนสำเร็จ !</span> แล้วพบกันในงานวันที่ <u>26/28/2023</u>
+            </div>
+                
+      </div>
+    </motion.div>
+   
+    
+
+</>
+: 
+
+
+''}
+
     </motion.div>
       
 
@@ -169,7 +227,7 @@ const Home: NextPage = () => {
 
 
             </div>
-
+           
            
            
             <Footbar />
