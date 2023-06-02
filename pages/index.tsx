@@ -6,7 +6,6 @@ import MotionX from './component/MotionX';
 
 import { version } from 'react';
 
-import { motion, AnimatePresence } from "framer-motion";
 
 const Home: NextPage = () => {
     const [name, setName] = useState('');
