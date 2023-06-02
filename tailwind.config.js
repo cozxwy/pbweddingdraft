@@ -10,9 +10,28 @@ module.exports = {
       },
       colors: {
         primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a"}
-      }
+      },
+      animation: {
+        fade: 'fadeOut 5s ease-in-out',
+      },
+      keyframes: theme => ({
+        fadeOut: {
+          '0%': { backgroundColor: theme('colors.red.300') },
+          '100%': { backgroundColor: theme('colors.transparent') },
+        },
+      }),
+      animation: {
+        fadeinn: 'fadeIn 5s ease-in-out',
+      },
+      keyframes: theme => ({
+        fadeIn: {
+          '100%': { backgroundColor: theme('colors.transparent') },
+          '0%': { backgroundColor: theme('colors.red.300') },
+        },
+      }),
     }
   },
+ 
   plugins: [
     require('@tailwindcss/forms')
   ],
