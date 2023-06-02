@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className=' w-full h-16  border-gray-200 dark:bg-gray-800  fixed  text-white text-2xl'>
 
     
-    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 ">
+    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 mt-0.5 dark:bg-gray-800 ">
  
         <div className="flex flex-wrap justify-between items-center  mx-auto max-w-screen-xl">
            
