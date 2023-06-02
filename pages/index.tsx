@@ -2,18 +2,23 @@ import type { NextPage } from 'next'
 import {FormEvent, useState} from "react";
 import Navbar from './component/Navbar';
 import Footbar from './component/Footbar';
-import Link from 'next/link'
+import MotionX from './component/MotionX';
+
 import { version } from 'react';
+
+import { motion, AnimatePresence } from "framer-motion";
 
 const Home: NextPage = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    
+
+
+
+
     const [follow, setFollow] = useState('');
     const [message, setMessage] = useState('');
 
-    console.log(version);
 
     
     const [team, setTeam] = useState('');
@@ -59,8 +64,6 @@ const Home: NextPage = () => {
 
 <Navbar />
 
-            
-
             <div className="max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
                 
 <br></br>
@@ -71,6 +74,8 @@ const Home: NextPage = () => {
 <br></br>
 <br></br>
 <br></br>
+
+
                 <form className="py-4 space-y-4" onSubmit={handleSubmit}>
                     <div className="flex items-center justify-center">
                         <label htmlFor="name" className="sr-only">ชื่อ นามสกุล</label>
@@ -84,8 +89,8 @@ const Home: NextPage = () => {
 
                     <div className="flex items-center justify-center">
                     <label htmlFor="countries" className="sr-only">Select an option</label>
-                    <select id="follow" value={follow} onChange={e => setFollow(e.target.value)}  name="follow" className="text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md">
-                    <option selected>จำนวนผู้ติดตาม</option>
+                    <select id="follow" value='none' onChange={e => setFollow(e.target.value)}  name="follow" className="text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md">
+                    <option value="none">จำนวนผู้ติดตาม</option>
                     <option value="0">ไม่มี</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -131,10 +136,15 @@ const Home: NextPage = () => {
                         <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-md shadow py-3 px-2 text-white bg-indigo-600">ยืนยัน</button>
                     </div>
                 </form>
+
+
+
+
             </div>
 
+           
+           
             <Footbar />
-
 
 
             
@@ -143,3 +153,4 @@ const Home: NextPage = () => {
 }
 
 export default Home
+

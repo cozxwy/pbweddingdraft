@@ -3,7 +3,10 @@ import Footbar from '../component/Footbar';
 import React from 'react';
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
+import { motion } from "framer-motion";
 
+
+import MotionX from '../component/MotionX';
 
 function index(){
   return (
@@ -18,6 +21,9 @@ function index(){
 
     <br>
     </br>
+
+
+
     <section className="bg-white dark:bg-gray-900 antialiased">
   <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
     <div className="max-w-3xl mx-auto text-center">
@@ -69,8 +75,11 @@ function index(){
 </section>
 
 
-      
     </div>
+    
+   
+
+
     <Footbar />
 
     </main>
