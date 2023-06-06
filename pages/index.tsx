@@ -251,15 +251,30 @@ const Home: NextPage = () => {
 
 
 
-
-
+    <FootbarFlower />
 
 
 
             </div>
            
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
-                <div> 26/08/2023 at CDC </div>
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] flex">
+
+                <div className='flex flex-row mx-auto my-auto bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+                        
+  <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-white'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
+  
+  <div className="basis-1/2 text-center m-2 mx-auto my-auto">&nbsp;ณ CDC ballroom ชั้น 2&nbsp; &nbsp; (&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
+  <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
+       <img className=" animate-pulse h-12 mt-3 mx-auto max-w-xs rounded-lg shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
+       </Link>
+  
+  </div>
+        
+                </div>
+
+
+
+            
             </div>
 
             <div className="snap-start max-w-5xl mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] ">
@@ -334,8 +349,13 @@ const Home: NextPage = () => {
     </motion.div>
     
             </div>
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
-           4
+            <div className="snap-start max-w-5xl mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
+                
+<img className="h-auto max-w-full flex pt-12" src="https://apis.xogrp.com/media-api/images/ffb7a7cf-7b69-4533-bce0-a6a5b1f0a687" alt="image description"/>
+<br></br><br></br>
+<div className='text-center mx-auto my-auto'> Primoob got engagement.</div>
+<div className='text-center mx-auto my-auto'> We invite you to out ceremony.</div>
+
             </div>
 
             <FootbarFlower />
