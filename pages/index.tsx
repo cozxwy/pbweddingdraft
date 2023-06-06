@@ -196,7 +196,7 @@ const Home: NextPage = () => {
             </div>
            
 
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] " id="formInput">
               
               <br></br>
               <br></br>
