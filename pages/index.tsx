@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import {FormEvent, useState} from "react";
 import Navbar from './component/Navbar';
 import Footbar from './component/Footbar';
+
+import FootbarFlower from './component/FootbarFlower';
 import ButtonLoading2 from './component/ButtonLoading2';
 
 import { motion } from 'framer-motion';
@@ -105,7 +107,7 @@ const Home: NextPage = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className="">
-      <div className=" ">
+      <div className="ิ">
       
        
       <form className="py-4 space-y-4" onSubmit={handleSubmit}>
@@ -257,9 +259,9 @@ const Home: NextPage = () => {
            
            
            
-            <Footbar />
 
 
+            <FootbarFlower />
             
         </main>
     )
