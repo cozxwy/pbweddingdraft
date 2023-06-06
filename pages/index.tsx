@@ -87,13 +87,13 @@ const Home: NextPage = () => {
     return (
 
         
-        <main className="bg-gray-100 min-h-screen main">
+        <main className="bg-gray-100 min-h-screen main h-screen  snap-y snap-mandatory overflow-scroll">
 
 <Navbar />
 
 
 
-            <div className="max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
               
 <br></br>
 <br></br>
@@ -257,9 +257,16 @@ const Home: NextPage = () => {
 
             </div>
            
-           
-           
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
+                2
+            </div>
 
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
+          3
+            </div>
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] ">
+           4
+            </div>
 
             <FootbarFlower />
             
