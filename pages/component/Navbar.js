@@ -15,7 +15,9 @@ export default function Navbar() {
 </Head>
 
 
-    <header className=' w-full h-16  border-gray-200 dark:bg-gray-800  fixed  text-white text-2xl'>
+    <header className=' w-full h-16  border-gray-200 dark:bg-gray-800 drop-shadow-2xl
+
+ fixed  text-white text-2xl'>
 
     
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5  dark:bg-gray-800 ">
