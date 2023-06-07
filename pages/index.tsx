@@ -96,15 +96,18 @@ const Home: NextPage = () => {
                          {/* Landing pages */} 
             <div className="snap-start max-w-5xl mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
                 
-                <img className="h-auto max-w-full flex pt-12" src="https://apis.xogrp.com/media-api/images/ffb7a7cf-7b69-4533-bce0-a6a5b1f0a687" alt="image description"/>
+               
                 <br></br><br></br>
                 <div className='text-center mx-auto my-auto'> Primoob got engagement.</div>
-                <div className='text-center mx-auto my-auto'> We invite you to out ceremony.</div>
+                <div className='text-center mx-auto my-auto'> 26.08.2023</div>
+                
+                <div className='text-center mx-auto my-auto'> #primoob</div>
+                <img className="h-auto max-w-full flex pt-12" src="https://apis.xogrp.com/media-api/images/ffb7a7cf-7b69-4533-bce0-a6a5b1f0a687" alt="image description"/>
                 
             </div>
 
                       {/* DATE and Location and dress code */} 
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] ">
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3">
             <br></br><br></br><br></br>
                 <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
                         
@@ -128,7 +131,7 @@ const Home: NextPage = () => {
                 <p className='text-white '><u>Navy blue</u></p>
                 </div>
 
-                <div className="basis-1/3 text-center bg-orange-100 drop-shadow-xl  rounded-lg drop-shadow-lg">
+                <div className="basis-1/3 text-center bg-orange-100 drop-shadow-xl  rounded-lg drop-shadow-lg text-black dark:text-black">
                 <p><u>Begie</u></p>
                 </div>
 
@@ -141,19 +144,19 @@ const Home: NextPage = () => {
                 </div>
 
                 <br></br>
-                <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
-                <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-white m-2 mx-auto my-auto">
+                <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-lg mr-5 ml-5 h-20 '>
+                <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
                 <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
                 </div>
 
              
 
-                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-lg  text-black dark:text-white m-2 mx-auto my-auto">
+                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
                 <p>ยกน้ำชา</p>  <p className=' '>14.35</p>
                 </div>
 
             
-                <div className="basis-1/3 text-center =drop-shadow-xl  rounded-lg  text-black dark:text-white m-2 mx-auto my-auto" >
+                <div className="basis-1/3 text-center =drop-shadow-xl  rounded-lg  text-black dark:text-black m-2 mx-auto my-auto" >
                 <p className=''>พิธีฉลอง</p>   <p className=' '>18.30</p>
                 </div> 
                  
