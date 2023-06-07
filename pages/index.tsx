@@ -149,7 +149,7 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 5 }}
       viewport={{ once: true }}
       className=""> 
-                <img className="h-auto max-w-full w-max flex mt-20" src="flower3.png" alt="image description"/>
+                <img className="h-auto max-w-full w-max flex " src="flower3.png" alt="image description"/>
       </motion.div>
 </AnimatePresence>
 
