@@ -94,39 +94,104 @@ const Home: NextPage = () => {
 
 
                          {/* Landing pages */} 
-            <div className="snap-start max-w-5xl mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
+            <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
                 
                
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+
+            <div className=" rounded-t-full shadow-2xl shadow-indigo-200">
+                <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl'>Prim</p><p className='text-md mt-3'>&</p><p className='text-5xl'>Boom</p></div>
                 <br></br><br></br>
-                <div className='text-center mx-auto my-auto'> Primoob got engagement.</div>
-                <div className='text-center mx-auto my-auto'> 26.08.2023</div>
+                <div className='text-center mx-auto my-auto mt-20'> 26.08.2023</div>
                 
                 <div className='text-center mx-auto my-auto'> #primoob</div>
-                <img className="h-auto max-w-full flex pt-12" src="https://apis.xogrp.com/media-api/images/ffb7a7cf-7b69-4533-bce0-a6a5b1f0a687" alt="image description"/>
-                
+                <img className="h-auto max-w-full flex pt-5 mt-20" src="flower3.png" alt="image description"/>
+                </div>   
             </div>
+
+                     {/* Landing pages couple */} 
+                     <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
+                
+               
+                <br></br><br></br><br></br><br></br><br></br><br></br>
+    
+
+                <br></br><br></br><br></br>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+                   
+                   <div className='text-center mx-auto my-auto'>  <p className='text-3xl'>We invite you to celeberate out marriage</p></div>
+                
+                </div>
+                
+                <br></br><br></br><br></br>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+                <div className="basis-1/2 text-center  border-black-500 m-2 "> 
+                <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
+                <br></br>
+
+                <p>Pim</p>
+                  </div>
+
+                  <div className="basis-1/2 text-center  border-black-500 m-2 "> 
+                <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
+                    
+                <br></br>
+                    <p>Boom</p>
+                  </div>
+  
+  
+                
+                </div>
+
+
+
+                </div>
 
                       {/* DATE and Location and dress code */} 
             <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3">
             <br></br><br></br><br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+
+    
+
+
+
+            <motion.div
+      initial={{ scale: 0.95 }}
+      whileInView={{ scale: 1.0 }}
+      exit={{ scale: 1.0 }}
+      transition={{ delay: 0.3,type: "spring", stiffness: 100 }}
+      viewport={{ once: false }}
+      className=""> 
+           <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
                         
-  <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-white'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
-  
-  <div className="basis-1/2 text-center m-2 mx-auto my-auto">&nbsp;ณ CDC ballroom ชั้น 2&nbsp; &nbsp; (&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
-  <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
-       <img className=" animate-pulse h-12 mt-3 mx-auto max-w-xs rounded-lg shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
-       </Link>
-  
-  </div>
-        
+                    <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-white'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
+                    
+                    <div className="basis-1/2 text-center pr-2 mx-auto my-auto">&nbsp;ณ CDC ballroom ชั้น 2&nbsp; &nbsp; (&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
+                    <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
+                        <img className=" animate-pulse h-12 mt-3 mx-auto max-w-xs rounded-lg shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
+                        </Link>
+                    
+                    </div>
+                            
 
         
                 </div>
+    </motion.div>
+
+
+           
                 
                 
                 <br></br>
-                <div className='space-x-6 flex flex-row mx-auto my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
+
+                
+            <motion.div
+      initial={{ scale: 0.95 }}
+      whileInView={{ scale: 1.0 }}
+      exit={{ scale: 1.0 }}
+      transition={{ delay: 0.6,type: "spring", stiffness: 100 }}
+      viewport={{ once: false }}
+      className="">   <div className='space-x-6 flex flex-row mx-auto my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center bg-blue-950 drop-shadow-xl rounded-lg drop-shadow-lg ">
                 <p className='text-white '><u>Navy blue</u></p>
                 </div>
@@ -141,10 +206,22 @@ const Home: NextPage = () => {
                  
                  
               
-                </div>
+                </div>  
+                </motion.div>
+
+
+              
 
                 <br></br>
-                <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-lg mr-5 ml-5 h-20 '>
+
+                
+            <motion.div
+      initial={{ scale: 0.8 }}
+      whileInView={{ scale: 1.0 }}
+      exit={{ scale: 1.0 }}
+      transition={{ delay: 1.2,type: "spring", stiffness: 100 }}
+      viewport={{ once: false }}
+      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-lg mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
                 <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
                 </div>
@@ -162,7 +239,11 @@ const Home: NextPage = () => {
                  
                  
               
-                </div>
+                </div> </motion.div>
+
+
+
+                
 
                 
                 <br></br>

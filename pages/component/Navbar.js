@@ -15,7 +15,7 @@ export default function Navbar() {
 </Head>
 
 
-    <header className=' w-full h-16  border-gray-200 dark:bg-gray-800 drop-shadow-2xl
+    <header className=' w-full h-16  border-gray-200 dark:bg-gray-800 drop-shadow-2xl z-40
 
  fixed  text-white text-2xl'>
 
