@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import {FormEvent, useState} from "react";
+import {FormEvent, useState ,useEffect } from "react";
 import Navbar from './component/Navbar';
 import Footbar from './component/Footbar';
 
@@ -149,7 +149,7 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 5 }}
       viewport={{ once: true }}
       className=""> 
-                <img className="h-auto max-w-full flex mt-20" src="flower3.png" alt="image description"/>
+                <img className="h-auto max-w-full w-max flex mt-20" src="flower3.png" alt="image description"/>
       </motion.div>
 </AnimatePresence>
 
@@ -244,19 +244,19 @@ const Home: NextPage = () => {
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.3 }}
       viewport={{ once: false }}
-      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-2xl mr-5 ml-5 h-20 '>
-                <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
+      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto  dark:bg-gray-800 text-black dark:text-white rounded-2xl mr-5 ml-5 h-20 '>
+                <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  m-2 mx-auto my-auto">
                 <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
                 </div>
 
              
 
-                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-3xl  text-black dark:text-black m-2 mx-auto my-auto">
+                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-3xl  m-2 mx-auto my-auto">
                 <p>ยกน้ำชา</p>  <p className=' '>14.35</p>
                 </div>
 
             
-                <div className="basis-1/3 text-center =drop-shadow-xl  rounded-lg  text-black dark:text-black m-2 mx-auto my-auto" >
+                <div className="basis-1/3 text-center =drop-shadow-xl  rounded-lg  m-2 mx-auto my-auto" >
                 <p className=''>พิธีฉลอง</p>   <p className=' '>18.30</p>
                 </div> 
                  
@@ -337,7 +337,7 @@ const Home: NextPage = () => {
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.7}}
       viewport={{ once: false }}
-      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-2xl mr-5 ml-5 h-28 p-3'>
+      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black   rounded-2xl mr-5 ml-5 h-28 p-3'>
 
 
 
