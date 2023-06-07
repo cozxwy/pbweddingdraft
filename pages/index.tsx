@@ -7,7 +7,7 @@ import Link from 'next/link'
 import FootbarFlower from './component/FootbarFlower';
 import ButtonLoading2 from './component/ButtonLoading2';
 
-import { motion } from 'framer-motion';
+import { motion , AnimatePresence  } from 'framer-motion';
 import { version } from 'react';
 
 
@@ -100,17 +100,65 @@ const Home: NextPage = () => {
             <br></br><br></br><br></br><br></br><br></br><br></br>
 
             <div className=" rounded-t-full shadow-2xl shadow-indigo-200">
+            <AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 5 ,delay:0 }}
+      viewport={{ once: false }}
+      className=""> 
+              
                 <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl'>Prim</p><p className='text-md mt-3'>&</p><p className='text-5xl'>Boom</p></div>
+      </motion.div>
+</AnimatePresence>
+
                 <br></br><br></br>
-                <div className='text-center mx-auto my-auto mt-20'> 26.08.2023</div>
+
+                <AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 5 ,delay:0.25 }}
+      viewport={{ once: false }}
+      className=""> 
+               <div className='text-center mx-auto my-auto mt-20'> 26.08.2023</div>
+                    </motion.div>
+</AnimatePresence>
+               
+<AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 5 , delay:0.5 }}
+      viewport={{ once: false }}
+      className=""> 
+              <div className='text-center mx-auto my-auto'> #primoob</div>
+                  </motion.div>
+</AnimatePresence>
                 
-                <div className='text-center mx-auto my-auto'> #primoob</div>
+
+
+                <AnimatePresence>
+            <motion.div
+      initial={{ y: 100 }}
+      whileInView={{ y: 0 }}
+      exit={{ y: 0 }}
+      transition={{ type: "spring" , duration : 5 }}
+      viewport={{ once: false }}
+      className=""> 
                 <img className="h-auto max-w-full flex pt-5 mt-20" src="flower3.png" alt="image description"/>
+      </motion.div>
+</AnimatePresence>
+
+
                 </div>   
             </div>
 
                      {/* Landing pages couple */} 
-                     <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
+                     <div className="snap-start max-w-5xl z-30 mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
                 
                
                 <br></br><br></br><br></br><br></br><br></br><br></br>
@@ -154,12 +202,12 @@ const Home: NextPage = () => {
     
 
 
-
+            <AnimatePresence>
             <motion.div
       initial={{ scale: 0.95 }}
       whileInView={{ scale: 1.0 }}
       exit={{ scale: 1.0 }}
-      transition={{ delay: 0.3,type: "spring", stiffness: 100 }}
+      transition={{ delay: 0.1,type: "spring", stiffness: 100 }}
       viewport={{ once: false }}
       className=""> 
            <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-2xl mr-5 ml-5'>
@@ -177,6 +225,7 @@ const Home: NextPage = () => {
         
                 </div>
     </motion.div>
+  </AnimatePresence>
 
 
            
@@ -184,12 +233,12 @@ const Home: NextPage = () => {
                 
                 <br></br>
 
-                
+                <AnimatePresence>
             <motion.div
       initial={{ scale: 0.95 }}
       whileInView={{ scale: 1.0 }}
       exit={{ scale: 1.0 }}
-      transition={{ delay: 0.6,type: "spring", stiffness: 100 }}
+      transition={{ delay: 0.2,type: "spring", stiffness: 100 }}
       viewport={{ once: false }}
       className="">   <div className='space-x-6 flex flex-row mx-auto my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center bg-blue-950 drop-shadow-xl rounded-2xl drop-shadow-lg ">
@@ -208,18 +257,18 @@ const Home: NextPage = () => {
               
                 </div>  
                 </motion.div>
-
+</AnimatePresence>
 
               
 
                 <br></br>
 
-                
+                <AnimatePresence>
             <motion.div
       initial={{ scale: 0.8 }}
       whileInView={{ scale: 1.0 }}
       exit={{ scale: 1.0 }}
-      transition={{ delay: 1.2,type: "spring", stiffness: 100 }}
+      transition={{ delay: 0.3,type: "spring", stiffness: 100 }}
       viewport={{ once: false }}
       className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-2xl mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
@@ -240,16 +289,27 @@ const Home: NextPage = () => {
                  
               
                 </div> </motion.div>
-
+</AnimatePresence>
 
 
                 
 
                 
                 <br></br>
-                <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-2xl mr-5 ml-5 '>
+
+                <AnimatePresence>
+            <motion.div
+      initial={{ scale: 0.8 }}
+      whileInView={{ scale: 1.0 }}
+      exit={{ scale: 1.0 }}
+      transition={{ delay: 0.4,type: "spring", stiffness: 100 }}
+      viewport={{ once: false }}
+      className="">  <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-2xl mr-5 ml-5 '>
+
+                      
                         
                <div className="basis-1/2 text-center   drop-shadow-xl rounded-lg  text-black dark:text-white h-20">
+
              <img className="rounded-2xl drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
  
                 </div>
@@ -289,6 +349,13 @@ const Home: NextPage = () => {
                    
                 </div>
                 </div>
+      </motion.div>
+</AnimatePresence>
+            
+
+
+
+               
 
               
 
