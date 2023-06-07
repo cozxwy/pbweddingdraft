@@ -99,14 +99,14 @@ const Home: NextPage = () => {
                
             <br></br><br></br><br></br><br></br><br></br><br></br>
 
-            <div className=" rounded-t-full shadow-2xl shadow-indigo-200">
+            <div className=" rounded-t-full shadow-2xl shadow-black">
             <AnimatePresence>
             <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 5 ,delay:0 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className=""> 
               
                 <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl'>Prim</p><p className='text-md mt-3'>&</p><p className='text-5xl'>Boom</p></div>
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 5 ,delay:0.25 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className=""> 
                <div className='text-center mx-auto my-auto mt-20'> 26.08.2023</div>
                     </motion.div>
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 5 , delay:0.5 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className=""> 
               <div className='text-center mx-auto my-auto'> #primoob</div>
                   </motion.div>
@@ -144,12 +144,12 @@ const Home: NextPage = () => {
                 <AnimatePresence>
             <motion.div
       initial={{ y: 100 , opacity:0 }}
-      whileInView={{ y: 0 , opacity:100 }}
+      whileInView={{ y: -20 , opacity:100 }}
       exit={{ y: 0 , opacity:0 }}
       transition={{ type: "spring" , duration : 5 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className=""> 
-                <img className="h-auto max-w-full flex pt-5 mt-20" src="flower3.png" alt="image description"/>
+                <img className="h-auto max-w-full flex mt-20" src="flower3.png" alt="image description"/>
       </motion.div>
 </AnimatePresence>
 
@@ -204,10 +204,10 @@ const Home: NextPage = () => {
 
             <AnimatePresence>
             <motion.div
-      initial={{ scale: 0.95 }}
-      whileInView={{ scale: 1.0 }}
-      exit={{ scale: 1.0 }}
-      transition={{ delay: 0.1,type: "spring", stiffness: 100 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
       viewport={{ once: false }}
       className=""> 
            <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-2xl mr-5 ml-5'>
@@ -232,44 +232,17 @@ const Home: NextPage = () => {
                 
                 
                 <br></br>
-
-                <AnimatePresence>
-            <motion.div
-      initial={{ scale: 0.95 }}
-      whileInView={{ scale: 1.0 }}
-      exit={{ scale: 1.0 }}
-      transition={{ delay: 0.2,type: "spring", stiffness: 100 }}
-      viewport={{ once: false }}
-      className="">   <div className='space-x-6 flex flex-row mx-auto my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
-                <div className="basis-1/3 text-center bg-blue-950 drop-shadow-xl rounded-2xl drop-shadow-lg ">
-                <p className='text-white '><u>Navy blue</u></p>
-                </div>
-
-                <div className="basis-1/3 text-center bg-orange-100 drop-shadow-xl  rounded-2xl drop-shadow-lg text-black dark:text-black">
-                <p><u>Begie</u></p>
-                </div>
-
-                <div className="basis-1/3 text-center bg-slate-900 drop-shadow-xl rounded-2xl drop-shadow-lg ">
-                    <div className='mx-auto my-auto align-middle'><p className='text-white'><u>Black</u></p></div>
                 
-                </div>
-                 
-                 
-              
-                </div>  
-                </motion.div>
-</AnimatePresence>
-
+         
               
 
-                <br></br>
 
                 <AnimatePresence>
             <motion.div
-      initial={{ scale: 0.8 }}
-      whileInView={{ scale: 1.0 }}
-      exit={{ scale: 1.0 }}
-      transition={{ delay: 0.3,type: "spring", stiffness: 100 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.3 }}
       viewport={{ once: false }}
       className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-2xl mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
@@ -300,10 +273,10 @@ const Home: NextPage = () => {
 
                 <AnimatePresence>
             <motion.div
-      initial={{ scale: 0.8 }}
-      whileInView={{ scale: 1.0 }}
-      exit={{ scale: 1.0 }}
-      transition={{ delay: 0.4,type: "spring", stiffness: 100 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.5 }}
       viewport={{ once: false }}
       className="">  <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-2xl mr-5 ml-5 '>
 
@@ -355,6 +328,49 @@ const Home: NextPage = () => {
             
 
 
+<br></br>
+
+<AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.7}}
+      viewport={{ once: false }}
+      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-2xl mr-5 ml-5 h-28 p-3'>
+
+
+
+                <div className="basis-1/3 text-center ">
+
+                    <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'></div> <p className='pt-2'>ดำ</p>
+                
+                </div>
+
+                <div className="basis-1/3 text-center ">
+
+                    <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'></div> <p className='pt-2'>กรม</p>
+
+                    </div>
+
+
+                    <div className="basis-1/3 text-center ">
+
+                        <div className='bg-orange-100 rounded-t-full drop-shadow-md h-3/4'></div> <p className='pt-2'>ครีม</p>
+
+                        </div>
+
+             
+
+         
+                
+               
+              
+                 
+              
+                </div>  
+                </motion.div>
+</AnimatePresence>
 
                
 
@@ -529,7 +545,7 @@ const Home: NextPage = () => {
               
              </div>
 
-
+                        {/* stop scroll*/} 
              <div className="snap-stop max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3 " id="">
                 </div>     
             
