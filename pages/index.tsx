@@ -366,8 +366,8 @@ const Home: NextPage = () => {
             </div>
 
       
-
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] " id="formInput">
+                  {/* form input */} 
+            <div className="snap-start max-w-5xl  py-16 bg-center bg-no-repeat bg-my_bg_image h-[844px] " id="formInput">
               
               <br></br>
               <br></br>
@@ -381,11 +381,12 @@ const Home: NextPage = () => {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
                     className="">
-                    <div className="ิ">
+                    <div className="">
                     
                      
-                    <form className="py-4 space-y-4" onSubmit={handleSubmit}>
-                                  <div className="flex items-center justify-center">
+                    <form className=" justify-center space-y-4 " onSubmit={handleSubmit}>
+                       
+                                  <div className="flex items-center justify-center ">
                                       <label htmlFor="name" className="sr-only">ชื่อ นามสกุล *</label>
                                       <input required   autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
                                       shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl font-sans md:font-serif" placeholder="ชื่อ นามสกุล *" />
@@ -416,23 +417,23 @@ const Home: NextPage = () => {
               
                                   <div className="flex items-center justify-center">
                                
-              <h3 className="sr-only">Identification</h3>
-              <ul className=" space-x-4 text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 ">
-                  <li className=" w-1/2 inline-block  border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white rounded-xl">
-                      <div className="flex items-center pl-3">
-                          <input id="radioGirl" type="radio" value="girl" onChange={e => setTeam('girl')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                          <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">ทีมเจ้าสาว </label>
-                      </div>
-                  </li>
-                  <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white   rounded-xl">
-                      <div className="flex items-center pl-3 ">
-                          <input id="radioBoy"  type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                          <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ทีมเจ้าบ่าว&nbsp;&nbsp;&nbsp;</label>
-                      </div>
-                  </li>
-                 
-              </ul>
-              
+                                    <h3 className="sr-only">Identification</h3>
+                                    <ul className=" space-x-4 text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 ">
+                                        <li className=" w-1/2 inline-block  border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white rounded-xl">
+                                            <div className="flex items-center pl-3">
+                                                <input id="radioGirl" type="radio" value="girl" onChange={e => setTeam('girl')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                                <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">ทีมเจ้าสาว </label>
+                                            </div>
+                                        </li>
+                                        <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white   rounded-xl">
+                                            <div className="flex items-center pl-3 ">
+                                                <input id="radioBoy"  type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                                <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ทีมเจ้าบ่าว&nbsp;&nbsp;&nbsp;</label>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                    
               
               
                               </div>
@@ -452,11 +453,11 @@ const Home: NextPage = () => {
               
               
                                   <label className="relative inline-flex items-center cursor-pointer">
-                <input type="checkbox" value="" className="sr-only peer" required />
-                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                <span className="ml-3 text-sm font-medium text-gray-300 dark:text-gray-300">ยินดีให้ใช้และเปิดเผยข้อมูลส่วนบุคคล</span> 
-                
-              </label>
+                                        <input type="checkbox" value="" className="sr-only peer" required />
+                                        <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                                        <span className="ml-3 text-sm font-medium text-gray-300 dark:text-gray-300">ยินดีให้ใช้และเปิดเผยข้อมูลส่วนบุคคล</span> 
+                                        
+                                    </label>
               
               
                                 
@@ -488,7 +489,7 @@ const Home: NextPage = () => {
               
               
                                   </div>
-                              </form>
+                    </form>
               
                     </div>
               
@@ -527,7 +528,10 @@ const Home: NextPage = () => {
               
               
              </div>
-                         
+
+
+             <div className="snap-stop max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3 " id="">
+                </div>     
             
         </main>
     )
