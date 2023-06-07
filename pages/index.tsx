@@ -143,9 +143,9 @@ const Home: NextPage = () => {
 
                 <AnimatePresence>
             <motion.div
-      initial={{ y: 100 }}
-      whileInView={{ y: 0 }}
-      exit={{ y: 0 }}
+      initial={{ y: 100 , opacity:0 }}
+      whileInView={{ y: 0 , opacity:100 }}
+      exit={{ y: 0 , opacity:0 }}
       transition={{ type: "spring" , duration : 5 }}
       viewport={{ once: false }}
       className=""> 
@@ -197,7 +197,7 @@ const Home: NextPage = () => {
 
                       {/* DATE and Location and dress code */} 
             <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3">
-            <br></br><br></br><br></br>
+            <br></br>
 
     
 
@@ -249,8 +249,9 @@ const Home: NextPage = () => {
                 <p><u>Begie</u></p>
                 </div>
 
-                <div className="basis-1/3 text-center bg-slate-900 drop-shadow-xl rounded-2xl drop-shadow-lg">
-                <p className='text-white'><u>Black</u></p>
+                <div className="basis-1/3 text-center bg-slate-900 drop-shadow-xl rounded-2xl drop-shadow-lg ">
+                    <div className='mx-auto my-auto align-middle'><p className='text-white'><u>Black</u></p></div>
+                
                 </div>
                  
                  
