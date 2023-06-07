@@ -93,7 +93,7 @@ const Home: NextPage = () => {
 <Navbar />
 
 
-
+                         {/* Landing pages */} 
             <div className="snap-start max-w-5xl mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
                 
                 <img className="h-auto max-w-full flex pt-12" src="https://apis.xogrp.com/media-api/images/ffb7a7cf-7b69-4533-bce0-a6a5b1f0a687" alt="image description"/>
@@ -102,9 +102,11 @@ const Home: NextPage = () => {
                 <div className='text-center mx-auto my-auto'> We invite you to out ceremony.</div>
                 
             </div>
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] flex">
 
-                <div className='flex flex-row mx-auto my-auto bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+                      {/* DATE and Location and dress code */} 
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] ">
+            <br></br><br></br><br></br>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
                         
   <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-white'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
   
@@ -115,86 +117,103 @@ const Home: NextPage = () => {
   
   </div>
         
+
+        
+                </div>
+                
+                
+                <br></br>
+                <div className='space-x-6 flex flex-row mx-auto my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
+                <div className="basis-1/3 text-center bg-blue-950 drop-shadow-xl rounded-lg drop-shadow-lg ">
+                <p className='text-white '><u>Navy blue</u></p>
                 </div>
 
+                <div className="basis-1/3 text-center bg-orange-100 drop-shadow-xl  rounded-lg drop-shadow-lg">
+                <p><u>Begie</u></p>
+                </div>
+
+                <div className="basis-1/3 text-center bg-slate-900 drop-shadow-xl  rounded-lg drop-shadow-lg">
+                <p className='text-white'><u>Black</u></p>
+                </div>
+                 
+                 
+              
+                </div>
+
+                <br></br>
+                <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
+                <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-white m-2 mx-auto my-auto">
+                <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
+                </div>
+
+             
+
+                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-lg  text-black dark:text-white m-2 mx-auto my-auto">
+                <p>ยกน้ำชา</p>  <p className=' '>14.35</p>
+                </div>
+
+            
+                <div className="basis-1/3 text-center =drop-shadow-xl  rounded-lg  text-black dark:text-white m-2 mx-auto my-auto" >
+                <p className=''>พิธีฉลอง</p>   <p className=' '>18.30</p>
+                </div> 
+                 
+                 
+              
+                </div>
+
+                
+                <br></br>
+                <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-lg mr-5 ml-5 '>
+                        
+               <div className="basis-1/2 text-center   drop-shadow-xl rounded-lg  text-black dark:text-white h-20">
+             <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
+ 
+                </div>
+            
+                <div className="basis-1/2 text-center  drop-shadow-xl rounded-lg  text-white dark:text-white ">
+                    
+                    
+                    <div className='pt-4 rounded-lg bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500'> 
+                    <br></br>
+                    hashtag <br></br> <p className='text-2xl'>#primoob</p> <br></br> <br></br>
+                    </div>
+
+                    <br></br>
+                    <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-lg  '>
+                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-lg  text-white dark:text-white h-16 w-15">
+                   
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 mx-auto my-auto mt-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                     
 
 
+                    </div>
+
+                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-lg  text-white dark:text-white h-16 w-15">
+                   
+                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 mx-auto my-auto mt-5">
+                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                       </svg>
+                    
+
+
+                   </div>
+                   
+                      
+                        </div>
+                   
+                </div>
+                </div>
+
+              
+
+
+              
             
             </div>
 
-            <div className="snap-start max-w-5xl mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] ">
-            <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-      className="h-screen flex items-center justify-center"
-    >
-      <div className="text-white text-3xl">
       
-       
-    <section className="bg-white dark:bg-gray-800 antialiased">
-  <div className="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
-    <div className="max-w-3xl mx-auto text-center">
-      <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
-        Schedule
-      </h2>
-
-      <div className="mt-4">
-        <a href="#" title=""
-          className="inline-flex items-center text-lg font-medium text-primary-600 hover:underline dark:text-primary-500">
-           &nbsp;
-        
-        </a>
-      </div>
-    </div>
-
-    
-    <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
-    <li className="mb-10 ml-6">            
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-            <svg aria-hidden="true" className="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-        </span>
-        <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">งานสมรสเช้า<span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">26/08/2023</span></h3>
-        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">14.29-15.39</time>
-        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">พิธีแห่ขันหมาก สู่ขอเจ้าสาวและรับตัวเจ้าสาว ฝ่ายหญิงกั้นประตูจำนวน 9 ประตู</p>
-
-        <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
-        <a  className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-          <svg className="w-4 h-4 mr-2" strokeWidth="1.5"  fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>   </svg> 
-            สถานที่</a>
-            </Link>
-    </li>
-    <li className="mb-10 ml-6">
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-            <svg aria-hidden="true" className="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-        </span>
-        <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">พิธีโชว์สอนสอดและสวมแหวน</h3>
-        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">15.09-16.00</time>
-        <p className="text-base font-normal text-gray-500 dark:text-gray-400">สวมแหวน ยกน้ำชา คู่  ถ่ายภาพครอบครัว</p>
-    </li>
-    <li className="ml-6">
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-            <svg aria-hidden="true" className="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-        </span>
-        <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">after party</h3>
-        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">18.00-22.00</time>
-        <p className="text-base font-normal text-gray-500 dark:text-gray-400">งานฉลองมงคงสมรส และเชิญร่วมรับประทานอาหาร</p>
-    </li>
-    
-</ol>
-
-
-  </div>
-</section>
-
-      </div>
-    </motion.div>
-    
-            </div>
-           
 
             <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-auto bg-center bg-no-repeat bg-my_bg_image h-[844px] " id="formInput">
               
@@ -357,8 +376,6 @@ const Home: NextPage = () => {
               
              </div>
                          
-
-            <FootbarFlower />
             
         </main>
     )
