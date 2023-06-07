@@ -162,7 +162,7 @@ const Home: NextPage = () => {
       transition={{ delay: 0.3,type: "spring", stiffness: 100 }}
       viewport={{ once: false }}
       className=""> 
-           <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+           <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-2xl mr-5 ml-5'>
                         
                     <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-white'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
                     
@@ -192,15 +192,15 @@ const Home: NextPage = () => {
       transition={{ delay: 0.6,type: "spring", stiffness: 100 }}
       viewport={{ once: false }}
       className="">   <div className='space-x-6 flex flex-row mx-auto my-auto text-black dark:text-white rounded-lg mr-5 ml-5 h-20 '>
-                <div className="basis-1/3 text-center bg-blue-950 drop-shadow-xl rounded-lg drop-shadow-lg ">
+                <div className="basis-1/3 text-center bg-blue-950 drop-shadow-xl rounded-2xl drop-shadow-lg ">
                 <p className='text-white '><u>Navy blue</u></p>
                 </div>
 
-                <div className="basis-1/3 text-center bg-orange-100 drop-shadow-xl  rounded-lg drop-shadow-lg text-black dark:text-black">
+                <div className="basis-1/3 text-center bg-orange-100 drop-shadow-xl  rounded-2xl drop-shadow-lg text-black dark:text-black">
                 <p><u>Begie</u></p>
                 </div>
 
-                <div className="basis-1/3 text-center bg-slate-900 drop-shadow-xl  rounded-lg drop-shadow-lg">
+                <div className="basis-1/3 text-center bg-slate-900 drop-shadow-xl rounded-2xl drop-shadow-lg">
                 <p className='text-white'><u>Black</u></p>
                 </div>
                  
@@ -221,14 +221,14 @@ const Home: NextPage = () => {
       exit={{ scale: 1.0 }}
       transition={{ delay: 1.2,type: "spring", stiffness: 100 }}
       viewport={{ once: false }}
-      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-lg mr-5 ml-5 h-20 '>
+      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black rounded-2xl mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
                 <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
                 </div>
 
              
 
-                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-lg  text-black dark:text-black m-2 mx-auto my-auto">
+                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-3xl  text-black dark:text-black m-2 mx-auto my-auto">
                 <p>ยกน้ำชา</p>  <p className=' '>14.35</p>
                 </div>
 
@@ -247,24 +247,24 @@ const Home: NextPage = () => {
 
                 
                 <br></br>
-                <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-lg mr-5 ml-5 '>
+                <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-2xl mr-5 ml-5 '>
                         
                <div className="basis-1/2 text-center   drop-shadow-xl rounded-lg  text-black dark:text-white h-20">
-             <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
+             <img className="rounded-2xl drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
  
                 </div>
             
                 <div className="basis-1/2 text-center  drop-shadow-xl rounded-lg  text-white dark:text-white ">
                     
                     
-                    <div className='pt-4 rounded-lg bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500'> 
+                    <div className='pt-4  rounded-2xl bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500'> 
                     <br></br>
                     hashtag <br></br> <p className='text-2xl'>#primoob</p> <br></br> <br></br>
                     </div>
 
                     <br></br>
                     <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-lg  '>
-                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-lg  text-white dark:text-white h-16 w-15">
+                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-2xl  text-white dark:text-white h-16 w-15">
                    
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 mx-auto my-auto mt-5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -274,7 +274,7 @@ const Home: NextPage = () => {
 
                     </div>
 
-                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-lg  text-white dark:text-white h-16 w-15">
+                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-2xl  text-white dark:text-white h-16 w-15">
                    
                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 mx-auto my-auto mt-5">
                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
