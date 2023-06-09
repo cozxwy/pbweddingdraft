@@ -8,21 +8,22 @@ import FootbarFlower from './component/FootbarFlower';
 import ButtonLoading2 from './component/ButtonLoading2';
 
 
-import localFont from  '@next/font/local'
+import localFont from  'next/font/local'
 import { motion , AnimatePresence  } from 'framer-motion';
 import { version } from 'react';
 
+import styles from '../styles/Home.module.css'
 
 const poppins = localFont({
     src: [
       {
-        path: '../public/Bacalisties.ttf',
+        path: '../public/Bacalisties.woff2',
         weight: '400'
       }
     ],
     variable: '--font-poppins'
   })
-
+  const myFont = localFont({ src: '../public/Bacalisties.woff2' })
 
 
 
@@ -33,22 +34,11 @@ const Home: NextPage = () => {
     const [license_plate, setlicense_plate] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
-
-
- 
-
-
-
     const handleClickLoad = () => {
      
     };
-
-
     const [follow, setFollow] = useState('');
     const [message, setMessage] = useState('');
-
-
-    
     const [team, setTeam] = useState('');
 
   
@@ -130,7 +120,7 @@ const Home: NextPage = () => {
       className=""> 
             
                 <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl font-sans lg:font-serif rotate-350'>Pimchanok</p>
-                <p className={`${poppins.variable} font-sans`}  >abc</p>
+                <p className={styles.testFont}  >abc</p>
                 <p className='text-md mt-3 font-sans md:font-serif '>&</p>
                 <p className='text-5xl font-sans md:font-serif rotate-350'>Passakorn</p></div>
       </motion.div>
