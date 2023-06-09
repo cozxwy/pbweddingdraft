@@ -7,8 +7,23 @@ import Link from 'next/link'
 import FootbarFlower from './component/FootbarFlower';
 import ButtonLoading2 from './component/ButtonLoading2';
 
+
+import localFont from  '@next/font/local'
 import { motion , AnimatePresence  } from 'framer-motion';
 import { version } from 'react';
+
+
+const poppins = localFont({
+    src: [
+      {
+        path: '../public/Bacalisties.ttf',
+        weight: '400'
+      }
+    ],
+    variable: '--font-poppins'
+  })
+
+
 
 
 const Home: NextPage = () => {
@@ -18,7 +33,12 @@ const Home: NextPage = () => {
     const [license_plate, setlicense_plate] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
-    
+
+
+ 
+
+
+
     const handleClickLoad = () => {
      
     };
@@ -108,9 +128,10 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 5 ,delay:0 }}
       viewport={{ once: true }}
       className=""> 
-              
+            
                 <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl font-sans lg:font-serif rotate-350'>Pimchanok</p>
-                <p className='text-md mt-3 font-sans md:font-serif'>&</p>
+                <p className={`${poppins.variable} font-sans`}  >abc</p>
+                <p className='text-md mt-3 font-sans md:font-serif '>&</p>
                 <p className='text-5xl font-sans md:font-serif rotate-350'>Passakorn</p></div>
       </motion.div>
 </AnimatePresence>
