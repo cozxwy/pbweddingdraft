@@ -101,12 +101,13 @@ const Home: NextPage = () => {
 
 
                          {/* Landing pages */} 
-            <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
+            <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-white h-[844px] text-black dark:text-black">
                 
                
             <br></br><br></br><br></br><br></br><br></br><br></br>
 
             <div className=" rounded-t-full shadow-2xl shadow-black">
+            <br></br><br></br>
             <AnimatePresence>
             <motion.div
       initial={{ opacity: 0 }}
@@ -115,15 +116,15 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 5 ,delay:0 }}
       viewport={{ once: true }}
       className=""> 
-            
-                <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl font-sans lg:font-serif rotate-350'>Pimchanok</p>
+                  <img className="h-72 my-auto mx-auto flex " src="logo.png" alt="image description"/>   
+                {/* <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl font-sans lg:font-serif rotate-350'>Pimchanok</p>
                 <p className={styles.testFont}  >abcd</p>
                 <p className='text-md mt-3 font-sans md:font-serif '>&</p>
-                <p className='text-5xl font-sans md:font-serif rotate-350'>Passakorn</p></div>
+                <p className='text-5xl font-sans md:font-serif rotate-350'>Passakorn</p></div>*/} 
       </motion.div>
 </AnimatePresence>
 
-                <br></br><br></br>
+            
 
                 <AnimatePresence>
             <motion.div
@@ -168,7 +169,7 @@ const Home: NextPage = () => {
             </div>
 
                      {/* Landing pages couple */} 
-                     <div className="snap-start max-w-5xl z-30 mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-gray-800 h-[844px] text-black dark:text-white">
+                     <div className="snap-start max-w-5xl z-30 mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-white h-[844px] text-black dark:text-black">
                 
                
                 <br></br><br></br><br></br><br></br><br></br><br></br>
