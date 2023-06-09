@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-@font-face {
-  font-family: 'Bacalisties';
-  src: local('Bacalisties'), url(../public/Bacalisties.ttf) format('ttf');
-}
 
 body{
     font-family: 'Kanit', sans-serif;
