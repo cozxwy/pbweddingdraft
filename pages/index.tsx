@@ -185,7 +185,7 @@ const Home: NextPage = () => {
 
 
 
-                <br></br><br></br>
+                <br></br>
                 <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
                    
                    <div className='text-center mx-auto my-auto'> 
@@ -235,7 +235,7 @@ const Home: NextPage = () => {
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.1 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className=""> 
            <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
                         
@@ -270,7 +270,7 @@ const Home: NextPage = () => {
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.3 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  m-2 mx-auto my-auto">
                 <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
@@ -304,7 +304,7 @@ const Home: NextPage = () => {
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.5 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className="">  <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-2xl mr-5 ml-5 '>
 
                       
@@ -365,7 +365,7 @@ const Home: NextPage = () => {
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.7}}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black   rounded-2xl mr-5 ml-5 h-28 p-3'>
 
 
@@ -414,6 +414,7 @@ const Home: NextPage = () => {
                   {/* form input */} 
             <div className="snap-start max-w-5xl  py-16 bg-center bg-no-repeat bg-my_bg_image h-[844px] " id="formInput">
               
+              <br></br>
               <br></br>
               <br></br>
               <br></br>
@@ -549,7 +550,7 @@ const Home: NextPage = () => {
                   >
                     <div className=" content-center">
                     <div className="content-center p-4 mb-4 m-5 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-                          <span className="font-medium">ลงทะเบียนสำเร็จ !</span> แล้วพบกันในงานวันที่ <u>26/28/2023</u>
+                          <span className="font-medium">ลงทะเบียนสำเร็จ !</span> แล้วพบกันในงานวันที่ <u>26.08.2023</u>
                           </div>
                               
                     </div>

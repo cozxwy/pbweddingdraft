@@ -6,18 +6,17 @@ export default function Navbar() {
 
 
 
-    <header className=' w-full h-16  border-gray-200 dark:bg-white drop-shadow-2xl z-40
+    <header className=' w-full h-16  border-gray-200 dark:bg-white drop-shadow-2xl z-40 fixed  text-white text-2xl pt-1 '>
 
- fixed  text-white text-2xl'>
+    <link rel="shortcut icon" href="/public/pblogo.svg" />
 
-    
-    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5  dark:bg-white ">
+    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white ">
  
         <div className="flex flex-wrap justify-between items-center  mx-auto max-w-screen-xl">
            
             <a className="flex items-center">
-                <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                <span className="self-center text-xl text-black font-semibold whitespace-nowrap dark:text-black">PB wedding</span>
+                <img src="/pblogo.svg" className="mr-3 h-10 sm:h-9" alt="Flowbite Logo" />
+                <span className="self-center text-lg text-black font-semibold whitespace-nowrap dark:text-black">พิมบูมแต่งแล้วนะ</span>
             </a>
             <div className="flex items-center lg:order-2">
             <a className="text-gray-800 dark:text-black hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"></a>
