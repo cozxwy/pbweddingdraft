@@ -172,18 +172,33 @@ const Home: NextPage = () => {
                      <div className="snap-start max-w-5xl z-30 mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-white h-[844px] text-black dark:text-black">
                 
                
-                <br></br><br></br><br></br><br></br><br></br><br></br>
-    
+                <br></br><br></br>
+
+
+                <video autoPlay loop muted className="w-full">
+    <source
+      src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+
+
 
                 <br></br><br></br><br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
                    
-                   <div className='text-center mx-auto my-auto'>  <p className='text-3xl'>We invite you to celeberate out marriage</p></div>
+                   <div className='text-center mx-auto my-auto'> 
+                    <p className='text-2xl  pr-5 text-black '>
+                        &nbsp;&nbsp;&nbsp;&nbsp;We invite you to our marriage.
+                        </p>
+                   
+                   </div>
                 
                 </div>
                 
                 <br></br><br></br><br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-gray-800 text-black dark:text-white rounded-lg mr-5 ml-5'>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
                 <div className="basis-1/2 text-center  border-black-500 m-2 "> 
                 <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
                 <br></br>
@@ -223,9 +238,9 @@ const Home: NextPage = () => {
       className=""> 
            <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
                         
-                    <div className="basis-1/2 text-center border-r-4 border-slate-50 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-black'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
+                    <div className="basis-1/2 text-center border-r-4 border-slate-50 m-2 "> Saturday <p className='text-7xl text-gray-900 dark:text-black'>26</p> August <br></br> 2023  <br></br>  </div>
                     
-                    <div className="basis-1/2 text-center pr-2 mx-auto my-auto">&nbsp;ณ CDC ballroom&nbsp; &nbsp;(&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
+                    <div className="basis-1/2 text-center pr-2 mx-auto my-auto">&nbsp;at CDC ballroom&nbsp; &nbsp;(&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
                     <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
                         <img className=" animate-pulse h-12 mt-3 mx-auto max-w-xs rounded-lg drop-shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
                         </Link>
@@ -304,7 +319,7 @@ const Home: NextPage = () => {
                     
                     <div className='pt-4  rounded-2xl bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500'> 
                     <br></br>
-                    hashtag <br></br> <p className='text-2xl'># PRIMOOB</p> <br></br> <br></br>
+                    hashtag <br></br> <p className='text-xl mx-auto mt-1 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white text-white'># PRIMOOB</p> <br></br> <br></br>
                     </div>
 
                     <br></br>
@@ -356,20 +371,20 @@ const Home: NextPage = () => {
 
                 <div className="basis-1/3 text-center ">
 
-                    <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'></div> <p className='pt-2'>ดำ</p>
+                    <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'></div> <p className='pt-2'>Black</p>
                 
                 </div>
 
                 <div className="basis-1/3 text-center ">
 
-                    <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'></div> <p className='pt-2'>กรม</p>
+                    <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'></div> <p className='pt-2'>Navy</p>
 
                     </div>
 
 
                     <div className="basis-1/3 text-center ">
 
-                        <div className='bg-orange-100 rounded-t-full drop-shadow-md h-3/4'></div> <p className='pt-2'>ครีม</p>
+                        <div className='bg-orange-100 rounded-t-full drop-shadow-md h-3/4'></div> <p className='pt-2'>Begie</p>
 
                         </div>
 
