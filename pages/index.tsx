@@ -109,7 +109,9 @@ const Home: NextPage = () => {
       viewport={{ once: true }}
       className=""> 
               
-                <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl'>Prim</p><p className='text-md mt-3'>&</p><p className='text-5xl'>Boom</p></div>
+                <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl font-sans lg:font-serif rotate-350'>Pimchanok</p>
+                <p className='text-md mt-3 font-sans md:font-serif'>&</p>
+                <p className='text-5xl font-sans md:font-serif rotate-350'>Passakorn</p></div>
       </motion.div>
 </AnimatePresence>
 
@@ -123,7 +125,7 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 5 ,delay:0.25 }}
       viewport={{ once: true }}
       className=""> 
-               <div className='text-center mx-auto my-auto mt-20'> 26.08.2023</div>
+               <div className='text-center mx-auto my-auto mt-20 '> 26 . 08 . 2023</div>
                     </motion.div>
 </AnimatePresence>
                
@@ -135,7 +137,7 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 5 , delay:0.5 }}
       viewport={{ once: true }}
       className=""> 
-              <div className='text-center mx-auto my-auto'> #primoob</div>
+              <div className='text-center mx-auto my-auto tracking-wide'> # P R I M O O B</div>
                   </motion.div>
 </AnimatePresence>
                 
