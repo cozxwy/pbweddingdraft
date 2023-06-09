@@ -155,7 +155,7 @@ const Home: NextPage = () => {
                 <AnimatePresence>
             <motion.div
       initial={{ y: 100 , opacity:0 }}
-      whileInView={{ y: -20 , opacity:100 }}
+      whileInView={{ y: 0 , opacity:100 }}
       exit={{ y: 0 , opacity:0 }}
       transition={{ type: "spring" , duration : 5 }}
       viewport={{ once: true }}
@@ -221,13 +221,13 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 2 , delay:0.1 }}
       viewport={{ once: false }}
       className=""> 
-           <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-gray-800 text-black dark:text-white rounded-2xl mr-5 ml-5'>
+           <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
                         
-                    <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-white'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
+                    <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-black'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
                     
-                    <div className="basis-1/2 text-center pr-2 mx-auto my-auto">&nbsp;ณ CDC ballroom ชั้น 2&nbsp; &nbsp; (&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
+                    <div className="basis-1/2 text-center pr-2 mx-auto my-auto">&nbsp;ณ CDC ballroom&nbsp; &nbsp;(&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
                     <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
-                        <img className=" animate-pulse h-12 mt-3 mx-auto max-w-xs rounded-lg shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
+                        <img className=" animate-pulse h-12 mt-3 mx-auto max-w-xs rounded-lg drop-shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
                         </Link>
                     
                     </div>
@@ -255,7 +255,7 @@ const Home: NextPage = () => {
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.3 }}
       viewport={{ once: false }}
-      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto  dark:bg-gray-800 text-black dark:text-white rounded-2xl mr-5 ml-5 h-20 '>
+      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 h-20 '>
                 <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  m-2 mx-auto my-auto">
                 <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
                 </div>
