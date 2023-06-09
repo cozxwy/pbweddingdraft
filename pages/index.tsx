@@ -223,7 +223,7 @@ const Home: NextPage = () => {
       className=""> 
            <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
                         
-                    <div className="basis-1/2 text-center border-r-4 border-black-500 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-black'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
+                    <div className="basis-1/2 text-center border-r-4 border-slate-50 m-2 "> วันเสาร์ที่ <p className='text-7xl text-gray-900 dark:text-black'>26</p> สิงหาคม <br></br> 2566  <br></br>  </div>
                     
                     <div className="basis-1/2 text-center pr-2 mx-auto my-auto">&nbsp;ณ CDC ballroom&nbsp; &nbsp;(&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
                     <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
@@ -316,7 +316,7 @@ const Home: NextPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                         </svg>
 
-                        Boom
+                        <p className='text-xs mt-1'>BOOM</p>
                     </Link>
 
                     </div>
@@ -327,7 +327,7 @@ const Home: NextPage = () => {
                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                        </svg>
                     
-                        Pim
+                       <p className='text-xs mt-1'>PIM</p>
                    </Link>
                    </div>
                    
