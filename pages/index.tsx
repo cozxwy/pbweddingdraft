@@ -175,7 +175,7 @@ const Home: NextPage = () => {
                 <br></br><br></br>
 
 
-                <video autoPlay loop muted className="w-full">
+                <video autoPlay muted className="w-full">
     <source
       src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
       type="video/mp4"
@@ -185,32 +185,33 @@ const Home: NextPage = () => {
 
 
 
-                <br></br><br></br><br></br>
+                <br></br><br></br>
                 <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
                    
                    <div className='text-center mx-auto my-auto'> 
                     <p className='text-2xl  pr-5 text-black '>
-                        &nbsp;&nbsp;&nbsp;&nbsp;We invite you to our marriage.
+                        &nbsp;&nbsp;&nbsp;&nbsp;With great joy, we invite you to celebrate the marriage of &nbsp;
+                        <mark className="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">PRIM</mark> and <mark className="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">BOOM</mark>
                         </p>
                    
                    </div>
                 
                 </div>
-                
-                <br></br><br></br><br></br>
+                <br></br>
+                <br></br>
                 <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
                 <div className="basis-1/2 text-center  border-black-500 m-2 "> 
-                <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
+                <img className="rounded-lg drop-shadow-lg h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
                 <br></br>
 
-                <p>Pim</p>
+                <p></p>
                   </div>
 
                   <div className="basis-1/2 text-center  border-black-500 m-2 "> 
                 <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
                     
                 <br></br>
-                    <p>Boom</p>
+                    <p></p>
                   </div>
   
   
