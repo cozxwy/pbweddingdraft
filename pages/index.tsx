@@ -88,7 +88,7 @@ const Home: NextPage = () => {
     return (
 
         
-        <main className="bg-gray-100 min-h-screen main h-screen  snap-y snap-mandatory overflow-scroll">
+        <main className="bg-gray-100 min-h-screen main h-screen  snap-y snap-mandatory overflow-scroll overflow-x-hidden">
 
 <Navbar />
 
