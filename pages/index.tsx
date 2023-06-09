@@ -134,7 +134,7 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 5 ,delay:0.25 }}
       viewport={{ once: true }}
       className=""> 
-               <div className='text-center mx-auto my-auto mt-20 '> 26 . 08 . 2023</div>
+               <div className='text-center mx-auto my-auto mt-2 '> 26 . 08 . 2023</div>
                     </motion.div>
 </AnimatePresence>
                
