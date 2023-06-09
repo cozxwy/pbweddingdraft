@@ -5,6 +5,13 @@ export default function Navbar() {
     return <>
     <Head>
 
+    <link
+    rel="preload"
+    href="/Bacalisties.ttf"
+    as="font"
+    type="font/ttf"
+    crossOrigin="anonymous"
+/>
 
 
 
