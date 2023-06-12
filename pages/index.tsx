@@ -169,7 +169,7 @@ const Home: NextPage = () => {
             </div>
 
                      {/* Landing pages couple */} 
-                     <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto  bg-repeat bg-my_bg2 bg-bottom h-[844px] text-black dark:text-black">
+                     <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto  bg-repeat bg-my_bg2 bg-bottom h-[844px] text-black dark:text-black  mr-10 ml-10">
                 
                
               
@@ -186,31 +186,82 @@ const Home: NextPage = () => {
 
  */} 
 
+
+
+
+
+
+
+
+
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5 '>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg '>
                    
                    <div className='text-center mx-auto my-auto'> 
-                    <p className='text-2xl  pr-5 text-black '>
+                    <p className='text-2xl  pr-5 text-[#8B6D5D] mt-10'>
                         &nbsp;&nbsp;&nbsp;&nbsp;WITH GREAT JOY, WE INVITE YOU TO CELEBRATE OUR MARRIAGE&nbsp;
                         </p>
                    
                    </div>
                 
                 </div>
-                <br></br>
-                <br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
+
+
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg   '>
+                   
+                   <div className='text-center mx-auto my-auto'> 
+                   <AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 5 ,delay:0 }}
+      viewport={{ once: true }}
+      className=""> 
+                  <img className="h-20 my-auto " src="ring.png" alt="image description"/>   
+                {/* <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl font-sans lg:font-serif rotate-350'>Pimchanok</p>
+                <p className={styles.testFont}  >abcd</p>
+                <p className='text-md mt-3 font-sans md:font-serif '>&</p>
+                <p className='text-5xl font-sans md:font-serif rotate-350'>Passakorn</p></div>*/} 
+      </motion.div>
+</AnimatePresence>
+
+                   
+                   </div>
+                
+                </div>
+
+
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg '>
+                   
                 <div className="basis-1/2 text-center  border-black-500 m-2 "> 
-                <img className="rounded-lg drop-shadow-lg h-auto" src="https://i.imgur.com/qsXg4fK.png" alt="image description"/>
+              
+                    <p className='text-xl'>BOOM</p>
+                  </div>
+                  <div className="basis-1/2 text-center  border-black-500 m-2 "> 
+              
+              <p className='text-xl'>PIM</p>
+            </div>
+
+
+                
+                </div>
+
+
+                
                 <br></br>
+                <br></br>
+                <div className='flex flex-row mx-auto my-auto  text-black dark:text-black rounded-lg  '>
+                <div className="basis-1/2 text-center  border-black-500 mr-1 "> 
+                <img className="rounded-lg drop-shadow-lg h-auto" src="https://i.imgur.com/qsXg4fK.png" alt="image description"/>
+            
 
                 <p></p>
                   </div>
 
-                  <div className="basis-1/2 text-center  border-black-500 m-2 "> 
+                  <div className="basis-1/2 text-center  border-black-500 ml-1 "> 
                 <img className="rounded-lg drop-shadow-lg  h-auto" src="https://i.imgur.com/FAhWiCU.png" alt="image description"/>
                     
-                <br></br>
                     <p></p>
                   </div>
   
@@ -223,7 +274,7 @@ const Home: NextPage = () => {
                 </div>  
 
                       {/* DATE and Location and dress code */} 
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3">
+            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-[#F4F3EE] bg-auto bg-center bg-no-repeat h-[844px] p-3">
             <br></br>
 
     
@@ -237,16 +288,33 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 2 , delay:0.1 }}
       viewport={{ once: true }}
       className=""> 
-           <div className='flex flex-row mx-auto my-auto bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
+           <div className=' flex-row mx-auto my-auto flex bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
                         
-                    <div className="basis-1/2 text-center border-r-4 border-slate-50 m-2 "> Saturday <p className='text-7xl text-gray-900 dark:text-black'>26</p> August <br></br> 2023  <br></br>  </div>
+                    <div className="basis-1/12 text-center "> 
+
+
                     
-                    <div className="basis-1/2 text-center pr-2 mx-auto my-auto">&nbsp;at CDC ballroom&nbsp; &nbsp;(&nbsp;เลียบด่วนรามอินทรา&nbsp;) <br></br>
-                    <Link href="https://goo.gl/maps/gEdgGKYYx3oSPhfi8">
-                        <img className=" animate-pulse h-12 mt-3 mx-auto max-w-xs rounded-lg drop-shadow-xl dark:shadow-gray-800 " src="https://img.freepik.com/premium-vector/google-maps-logo_578229-304.jpg" alt="image description"/>
-                        </Link>
+                   
+                  
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10 ml-6 mt-3 mb-3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                    </svg>
                     
                     </div>
+                    
+
+
+                    <div className="basis-11/12 text-center my-auto"> 
+
+                     <span className='text-xl text-gray-900 dark:text-black text-black '>วันเสาร์ที่ </span> <span className='text-4xl b'>&nbsp;26&nbsp;</span><span className='text-xl'>สิงหาคม 2566</span>   
+
+
+                    
+
+
+                     </div>
+                    
+                
                             
 
         
@@ -255,11 +323,111 @@ const Home: NextPage = () => {
   </AnimatePresence>
 
 
+<br></br>
+
+
+<AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
+      viewport={{ once: true }}
+      className=""> 
+           <div className=' flex-row mx-auto my-auto flex bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
+                        
+                    <div className="basis-1/12 text-center "> 
+
+
+                    
+                   
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10 ml-6 mt-8 mb-8">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+</svg>
+
+                    
+                    </div>
+                    
+
+
+                    <div className="basis-11/12 text-center my-auto"> 
+
+                    
+
+
+
+                     <span className='text-md text-gray-900 dark:text-black text-black '> CDC Ballroom 2nd floor (Building E) </span>  <br></br>
+                     <span className='text-md b'>@ Crystal Design Center CDC </span> <br></br>
+                     <span className='text-md'>(Praditmanutham Road)</span>   
+
+
+                    
+
+
+                     </div>
+                    
+                
+                            
+
+        
+                </div>
+    </motion.div>
+  </AnimatePresence>
+
+
+
+
            
                 
                 
                 <br></br>
                 
+
+
+
+                <AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity:1.0 }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
+      viewport={{ once: true }}
+      className=""> 
+           <div className=' flex-row mx-auto my-auto    rounded-2xl mr-5 ml-5'>
+     
+                    
+
+
+                    <div className="basis-1 text-center my-auto "> 
+
+                    
+                    <button type="button" className=" w-50  rounded-full 
+                    text-[#16243C] hover:text-white border 
+                     border-[#16243C] hover:bg-[#16243C] focus:ring-4 
+                     focus:outline-none focus:ring-[#16243C] font-medium 
+                      text-sm px-5 py-1 text-center mr-2 mb-2 
+                     dark:border-[#16243C] dark:text-[#16243C] dark:hover:text-white
+                      dark:hover:bg-[#16243C] dark:focus:ring-[#16243C]">Get direction ></button>
+
+                    
+
+
+                     </div>
+                    
+                
+                            
+
+        
+                </div>
+    </motion.div>
+  </AnimatePresence>
+
+
+
+
+                <br></br>
          
               
 
@@ -271,90 +439,127 @@ const Home: NextPage = () => {
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.3 }}
       viewport={{ once: true }}
-      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 h-20 '>
-                <div className="basis-1/3 text-center  drop-shadow-xl rounded-lg  m-2 mx-auto my-auto">
-                <p className=''>แห่ขันหมาก</p>  <p className=''>13.15</p>
-                </div>
-
-             
-
-                <div className="basis-1/3 text-center = drop-shadow-xl  rounded-3xl  m-2 mx-auto my-auto">
-                <p>ยกน้ำชา</p>  <p className=' '>14.35</p>
-                </div>
-
+      className="">  
+              <div className=' mx-auto bg-gray-50 drop-shadow-lg my-auto  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 p-5 '>
             
-                <div className="basis-1/3 text-center =drop-shadow-xl  rounded-lg  m-2 mx-auto my-auto" >
-                <p className=''>พิธีฉลอง</p>   <p className=' '>18.30</p>
-                </div> 
+             
+                <div className=" m-2 mx-auto my-auto ml-10 pb-5">
+                  
+                <div className="flex flex-row ">
+                  <div className="basis-1/4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                </svg>
+
+                  </div>
+                  <div className="basis-1/4 mt-2">13.29</div>
+                  <div className="basis-1/2 mt-2">แห่ขันหมาก</div>
+                </div>
+
+                </div>
+
+                  <div className=" m-2 mx-auto my-auto ml-10 pb-5">
+                  
+                  <div className="flex flex-row">
+                    <div className="basis-1/4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"  className="w-10 h-10">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                  </svg>
+  
+                    </div>
+                    <div className="basis-1/4">14.35</div>
+                    <div className="basis-1/2">ยกน้ำชา</div>
+                  </div>
+  
+                  </div>
+
+
+
+
+
+                  <div className=" m-2 mx-auto my-auto ml-10 ">
+                  
+                  <div className="flex flex-row">
+                    <div className="basis-1/4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"  className="w-10 h-10">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                  </svg>
+  
+                    </div>
+                    <div className="basis-1/4">18.30</div>
+                    <div className="basis-1/2">พิธีฉลองมงคลสมรส</div>
+                  </div>
+  
+                  </div>
+  
+            
                  
                  
               
-                </div> </motion.div>
-</AnimatePresence>
+                </div> 
+                </motion.div>
 
+              </AnimatePresence>
 
+<br></br>
                 
-
-                
-                <br></br>
-
-                <AnimatePresence>
+              <AnimatePresence>
             <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
-      transition={{ type: "spring" , duration : 2 , delay:0.5 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
       viewport={{ once: true }}
-      className="">  <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-2xl mr-5 ml-5 '>
-
-                      
+      className=""> 
+           <div className=' flex-row mx-auto my-auto flex bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
                         
-               <div className="basis-1/2 text-center   drop-shadow-xl rounded-lg  text-black dark:text-white h-20">
+                    <div className="basis-5/12 text-center ml-5"> 
 
-             <img className="rounded-2xl drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
- 
-                </div>
-            
-                <div className="basis-1/2 text-center  drop-shadow-xl rounded-lg  text-white dark:text-white ">
-                    
-                    
-                    <div className='pt-4  rounded-2xl bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500'> 
-                    <br></br>
-                    hashtag <br></br> <p className='text-xl mx-auto mt-1 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white text-white'># PRIMOOB</p> <br></br> <br></br>
+
+                    <div className='flex-row flex  p-4'>
+
+                    <div className=""> 
+
+                    <img className="h-10 my-auto m-5  " src="fb.png" alt="image description"/>   
+                    </div>
+                    <div className=""> 
+
+                    <img className="h-10 my-auto m-5 mr-2" src="ig.png" alt="image description"/>   
                     </div>
 
-                    <br></br>
-                    <div className='space-x-6 flex flex-row mx-auto  my-auto text-black dark:text-white rounded-lg  '>
-                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-2xl  text-white dark:text-white h-16 w-15">
+                    </div>
                    
-                    <Link href="tel:0959508301">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 mx-auto my-auto mt-3">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                        </svg>
 
-                        <p className='text-xs mt-1'>BOOM</p>
-                    </Link>
+
 
                     </div>
-
-                    <div className="basis-1/2 text-center  bg-green-500	  drop-shadow-xl rounded-2xl  text-white dark:text-white h-16 w-15">
-                    <Link href="tel:0839128184">
-                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 mx-auto my-auto mt-3">
-                       <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                       </svg>
                     
-                       <p className='text-xs mt-1'>PIM</p>
-                   </Link>
-                   </div>
-                   
-                      
-                        </div>
-                   
+
+
+                    <div className="basis-8/12 text-center my-auto pr-5"> 
+
+                    
+
+                  
+
+
+                     <span className='text-md text-gray-900 dark:text-black text-black '> # PRIMOOB </span>  
+
+
+                    
+
+
+                     </div>
+                    
+                
+                            
+
+        
                 </div>
-                </div>
-      </motion.div>
-</AnimatePresence>
-            
+    </motion.div>
+  </AnimatePresence>
+                
+        
 
 
 <br></br>
@@ -369,23 +574,31 @@ const Home: NextPage = () => {
       className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black   rounded-2xl mr-5 ml-5 h-28 p-3'>
 
 
+                <div className="basis-2/5 text-center my-auto ">
 
-                <div className="basis-1/3 text-center ">
+                  
+
+                  <span className='text-md text-gray-900 dark:text-black text-black '> THEME </span>  
+                </div>
+
+
+
+                <div className="basis-1/5 text-center ">
 
                     <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'></div> <p className='pt-2'>Black</p>
                 
                 </div>
 
-                <div className="basis-1/3 text-center ">
+                <div className="basis-1/5 text-center ">
 
                     <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'></div> <p className='pt-2'>Navy</p>
 
                     </div>
 
 
-                    <div className="basis-1/3 text-center ">
+                    <div className="basis-1/5 text-center ">
 
-                        <div className='bg-orange-100 rounded-t-full drop-shadow-md h-3/4'></div> <p className='pt-2'>Begie</p>
+                        <div className='bg-gray-400 rounded-t-full drop-shadow-md h-3/4'></div> <p className='pt-2'>Begie</p>
 
                         </div>
 
