@@ -194,7 +194,7 @@ const Home: NextPage = () => {
 
 
 
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br>
                 <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg '>
                    
                    <div className='text-center mx-auto my-auto'> 
@@ -402,15 +402,16 @@ const Home: NextPage = () => {
 
                     <div className="basis-1 text-center my-auto "> 
 
-                    
-                    <button type="button" className=" w-50  rounded-full 
+                     
+            <Link href="https://goo.gl/maps/u6BUnCyKnZ88fEPs7"> <button type="button" className=" w-50  rounded-full 
                     text-[#16243C] hover:text-white border 
                      border-[#16243C] hover:bg-[#16243C] focus:ring-4 
                      focus:outline-none focus:ring-[#16243C] font-medium 
                       text-sm px-5 py-1 text-center mr-2  
                      dark:border-[#16243C] dark:text-[#16243C] dark:hover:text-white
                       dark:hover:bg-[#16243C] dark:focus:ring-[#16243C]">Get direction &gt;</button>
-
+</Link>
+                   
                     
 
 
@@ -440,58 +441,51 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 2 , delay:0.3 }}
       viewport={{ once: true }}
       className="">  
-              <div className=' mx-auto bg-gray-50 drop-shadow-lg my-auto   dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 p-5 '>
+              <div className=' mx-auto bg-gray-50 drop-shadow-lg my-auto   dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 pt-2'>
             
              
-                <div className=" m-2 mx-auto my-auto ml-10 pb-5">
+                <div className=" m-2 mx-auto my-auto ml-10 ">
                   
                 <div className="flex flex-row ">
-                  <div className="basis-1/4">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-                </svg>
-
+                  <div className="basis-2/5">
+                
+                  <img className="h-16 w-16 my-auto" src="timeline1.png" alt="image description"/>   
                   </div>
-                  <div className="basis-1/4 mt-2">13.29</div>
-                  <div className="basis-1/2 mt-2">แห่ขันหมาก</div>
+                  <div className="basis-2/5 mt-6 ">13.29</div>
+                  <div className="basis-2/5 mt-6 mr-10">แห่ขันหมาก</div>
                 </div>
 
                 </div>
 
-                  <div className=" m-2 mx-auto my-auto ml-10 pb-5">
+                <div className=" m-2 mx-auto my-auto ml-10 ">
                   
-                  <div className="flex flex-row">
-                    <div className="basis-1/4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"  className="w-10 h-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-                  </svg>
-  
-                    </div>
-                    <div className="basis-1/4">14.35</div>
-                    <div className="basis-1/2">ยกน้ำชา</div>
-                  </div>
-  
-                  </div>
-
-
-
-
-
-                  <div className=" m-2 mx-auto my-auto ml-10 ">
+                  <div className="flex flex-row ">
+                    <div className="basis-2/5">
                   
-                  <div className="flex flex-row">
-                    <div className="basis-1/4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"  className="w-10 h-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-                  </svg>
-  
+                    <img className="h-16 w-16 my-auto " src="timeline2.png" alt="image description"/>   
                     </div>
-                    <div className="basis-1/4">18.30</div>
-                    <div className="basis-1/2">พิธีฉลองมงคลสมรส</div>
+                    <div className="basis-2/5 mt-5">14.35</div>
+                    <div className="basis-2/5 mr-10 mt-5">ยกน้ำชา</div>
                   </div>
   
                   </div>
+
+                  <div className=" m-2 mx-auto my-auto ml-10">
+                  
+                  <div className="flex flex-row ">
+                    <div className="basis-2/5">
+                  
+                    <img className="h-16 w-16 my-auto" src="timeline3.png" alt="image description"/>   
+                    </div>
+                    <div className="basis-2/5  mt-5">18.30</div>
+                    <div className="basis-2/5 mr-10">พิธีฉลองมงคลสมรส</div>
+                  </div>
   
+                  </div>
+
+                 
+
+
             
                  
                  
