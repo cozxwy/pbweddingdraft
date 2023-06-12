@@ -172,9 +172,10 @@ const Home: NextPage = () => {
                      <div className="snap-start max-w-5xl z-30 mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-white h-[844px] text-black dark:text-black">
                 
                
-                <br></br><br></br>
+              
 
 
+  {/*
                 <video autoPlay muted className="w-full">
     <source
       src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
@@ -183,10 +184,10 @@ const Home: NextPage = () => {
     Your browser does not support the video tag.
   </video>
 
+ */} 
 
-
-                <br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5 '>
                    
                    <div className='text-center mx-auto my-auto'> 
                     <p className='text-2xl  pr-5 text-black '>
@@ -201,14 +202,14 @@ const Home: NextPage = () => {
                 <br></br>
                 <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg mr-5 ml-5'>
                 <div className="basis-1/2 text-center  border-black-500 m-2 "> 
-                <img className="rounded-lg drop-shadow-lg h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
+                <img className="rounded-lg drop-shadow-lg h-auto" src="https://i.imgur.com/qsXg4fK.png" alt="image description"/>
                 <br></br>
 
                 <p></p>
                   </div>
 
                   <div className="basis-1/2 text-center  border-black-500 m-2 "> 
-                <img className="rounded-lg drop-shadow-lg  h-auto" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=712&q=80" alt="image description"/>
+                <img className="rounded-lg drop-shadow-lg  h-auto" src="https://i.imgur.com/FAhWiCU.png" alt="image description"/>
                     
                 <br></br>
                     <p></p>
