@@ -14,7 +14,8 @@ module.exports = {
       },
       backgroundImage: {
         'my_bg_image' : "url('https://images.unsplash.com/photo-1515595967223-f9fa59af5a3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk4fHxibGFjayUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60')",
-        'my_bg2' : "url('/bg-p2.png')",
+        'my_bg2' : "url('/formbg.png')",
+        'my_bg3' : "url('/bgp2.png')",
     
       },
       colors: {
