@@ -101,12 +101,12 @@ const Home: NextPage = () => {
 
 
                          {/* Landing pages */} 
-            <div className="snap-start max-w-5xl   mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-white h-[844px] text-black dark:text-black">
+            <div className="snap-start max-w-5xl pb-28  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-[#BDC1A3] h-[844px] text-black dark:text-black">
                 
                
             <br></br><br></br><br></br><br></br><br></br><br></br>
 
-            <div className=" rounded-t-full shadow-2xl shadow-black h-full">
+            <div className=" rounded-t-full shadow-2xl shadow-black h-full bg-[#F4F3EE] ">
             <br></br><br></br>
             <AnimatePresence>
             <motion.div
@@ -159,8 +159,8 @@ const Home: NextPage = () => {
       exit={{ y: 0 , opacity:0 }}
       transition={{ type: "spring" , duration : 5 }}
       viewport={{ once: true }}
-      className=""> 
-                <img className="h-auto max-w-full w-max flex " src="flower3.png" alt="image description"/>
+      className="bg-[#F4F3EE]"> 
+                <img className="h-auto max-w-full w-max flex " src="flower4.png" alt="image description"/>
       </motion.div>
 </AnimatePresence>
 
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
             </div>
 
                      {/* Landing pages couple */} 
-                     <div className="snap-start max-w-5xl z-30 mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-white h-[844px] text-black dark:text-black">
+                     <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto  bg-repeat bg-my_bg2 bg-bottom h-[844px] text-black dark:text-black">
                 
                
               
@@ -191,8 +191,7 @@ const Home: NextPage = () => {
                    
                    <div className='text-center mx-auto my-auto'> 
                     <p className='text-2xl  pr-5 text-black '>
-                        &nbsp;&nbsp;&nbsp;&nbsp;With great joy, we invite you to celebrate the marriage of &nbsp;
-                        <mark className="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">PRIM</mark> and <mark className="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">BOOM</mark>
+                        &nbsp;&nbsp;&nbsp;&nbsp;WITH GREAT JOY, WE INVITE YOU TO CELEBRATE OUR MARRIAGE&nbsp;
                         </p>
                    
                    </div>
@@ -221,7 +220,7 @@ const Home: NextPage = () => {
 
 
 
-                </div>
+                </div>  
 
                       {/* DATE and Location and dress code */} 
             <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3">
@@ -413,7 +412,7 @@ const Home: NextPage = () => {
 
       
                   {/* form input */} 
-            <div className="snap-start max-w-5xl  py-16 bg-center bg-no-repeat bg-my_bg_image h-[844px] " id="formInput">
+            <div className="snap-start max-w-5xl  py-16 bg-center bg-no-repeat bg-my_bg_image h-[844px] bg-right-bottom " id="formInput">
               
               <br></br>
               <br></br>
@@ -465,14 +464,15 @@ const Home: NextPage = () => {
                                   <div className="flex items-center justify-center">
                                
                                     <h3 className="sr-only">Identification</h3>
-                                    <ul className=" space-x-4 text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 ">
-                                        <li className=" w-1/2 inline-block  border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white rounded-xl">
+                                    <ul className=" space-x-4 text-slate-500 focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 ">
+                                        <li className=" w-1/2 inline-block  border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-300 shadow-md  bg-white rounded-xl">
                                             <div className="flex items-center pl-3">
-                                                <input id="radioGirl" type="radio" value="girl" onChange={e => setTeam('girl')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                                                <input id="radioGirl" type="radio" value="girl" onChange={e => setTeam('girl')}  name="list-radio"
+                                                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
                                                 <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">ทีมเจ้าสาว </label>
                                             </div>
                                         </li>
-                                        <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 bg-white   rounded-xl">
+                                        <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0  sm:border-r dark:border-gray-300 shadow-md bg-white   rounded-xl">
                                             <div className="flex items-center pl-3 ">
                                                 <input id="radioBoy"  type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
                                                 <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ทีมเจ้าบ่าว&nbsp;&nbsp;&nbsp;</label>
@@ -502,7 +502,7 @@ const Home: NextPage = () => {
                                   <label className="relative inline-flex items-center cursor-pointer">
                                         <input type="checkbox" value="" className="sr-only peer" required />
                                         <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                                        <span className="ml-3 text-sm font-medium text-gray-300 dark:text-gray-300">ยินดีให้ใช้และเปิดเผยข้อมูลส่วนบุคคล</span> 
+                                        <span className="ml-3 text-sm font-medium text-gray-700 dark:text-gray-700">ยินดีให้ใช้และเปิดเผยข้อมูลส่วนบุคคล</span> 
                                         
                                     </label>
               
@@ -549,9 +549,9 @@ const Home: NextPage = () => {
                     transition={{ duration: 1 }}
                     className=""
                   >
-                    <div className=" content-center">
-                    <div className="content-center p-4 mb-4 m-5 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-                          <span className="font-medium">ลงทะเบียนสำเร็จ !</span> แล้วพบกันในงานวันที่ <u>26.08.2023</u>
+                    <div className=" content-center ">
+                    <div className="content-center p-4 w-64 mb-4 m-5 text-sm text-green-900 rounded-lg bg-green-50 dark:bg-gray-100 dark:text-green-900" role="alert">
+                          <span className="font-medium pl-6">ลงทะเบียนสำเร็จ !</span> แล้วพบกันในงานวันที่ <u>26.08.2023</u>
                           </div>
                               
                     </div>

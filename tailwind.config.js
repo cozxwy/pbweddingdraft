@@ -4,13 +4,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
- 
+   
     extend: {
       rotate: {
         '350': '350deg',
       },
+      colors: {
+        'green-soild': '#BDC1A3',
+      },
       backgroundImage: {
-        'my_bg_image' : "url('https://i.imgur.com/zOthiey.jpg')",
+        'my_bg_image' : "url('https://images.unsplash.com/photo-1515595967223-f9fa59af5a3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk4fHxibGFjayUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60')",
+        'my_bg2' : "url('/bg-p2.png')",
+    
       },
       colors: {
         primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a"}
