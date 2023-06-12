@@ -409,7 +409,7 @@ const Home: NextPage = () => {
                      focus:outline-none focus:ring-[#16243C] font-medium 
                       text-sm px-5 py-1 text-center mr-2 mb-2 
                      dark:border-[#16243C] dark:text-[#16243C] dark:hover:text-white
-                      dark:hover:bg-[#16243C] dark:focus:ring-[#16243C]">Get direction ></button>
+                      dark:hover:bg-[#16243C] dark:focus:ring-[#16243C]">Get direction &gt;</button>
 
                     
 
