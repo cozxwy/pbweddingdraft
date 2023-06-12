@@ -407,7 +407,7 @@ const Home: NextPage = () => {
                     text-[#16243C] hover:text-white border 
                      border-[#16243C] hover:bg-[#16243C] focus:ring-4 
                      focus:outline-none focus:ring-[#16243C] font-medium 
-                      text-sm px-5 py-1 text-center mr-2 mb-2 
+                      text-sm px-5 py-1 text-center mr-2  
                      dark:border-[#16243C] dark:text-[#16243C] dark:hover:text-white
                       dark:hover:bg-[#16243C] dark:focus:ring-[#16243C]">Get direction &gt;</button>
 
@@ -440,7 +440,7 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 2 , delay:0.3 }}
       viewport={{ once: true }}
       className="">  
-              <div className=' mx-auto bg-gray-50 drop-shadow-lg my-auto  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 p-5 '>
+              <div className=' mx-auto bg-gray-50 drop-shadow-lg my-auto   dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 p-5 '>
             
              
                 <div className=" m-2 mx-auto my-auto ml-10 pb-5">
@@ -571,34 +571,34 @@ const Home: NextPage = () => {
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 2 , delay:0.7}}
       viewport={{ once: true }}
-      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black   rounded-2xl mr-5 ml-5 h-28 p-3'>
+      className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black   rounded-2xl mr-5 ml-5 h-24 p-3 pr-8 pt-5 pb-2'>
 
-
-                <div className="basis-2/5 text-center my-auto ">
+                    
+                <div className="basis-2/5 text-center my-auto mt-5 ">
 
                   
 
-                  <span className='text-md text-gray-900 dark:text-black text-black '> THEME </span>  
+                  <span className='text-md text-gray-900 dark:text-black text-black ml-5 '> THEME </span>  
                 </div>
 
 
 
-                <div className="basis-1/5 text-center ">
+                <div className="basis-1/5 text-center">
 
-                    <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'></div> <p className='pt-2'>Black</p>
+                    <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'></div> 
                 
                 </div>
 
                 <div className="basis-1/5 text-center ">
 
-                    <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'></div> <p className='pt-2'>Navy</p>
+                    <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'></div> 
 
                     </div>
 
 
                     <div className="basis-1/5 text-center ">
 
-                        <div className='bg-gray-400 rounded-t-full drop-shadow-md h-3/4'></div> <p className='pt-2'>Begie</p>
+                        <div className='bg-gray-400 rounded-t-full drop-shadow-md h-3/4'></div> 
 
                         </div>
 
