@@ -7,12 +7,14 @@ export default function Navbar() {
 
 
     <header className=' w-full h-16  border-gray-200 dark:bg-white drop-shadow-2xl z-40 fixed  text-white text-2xl pt-1 '>
-    
+
+          
     <Head>
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet"> </link>
     </Head>
+
     
     <link rel="shortcut icon" href="/public/pblogo.svg" />
 

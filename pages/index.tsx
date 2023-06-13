@@ -101,7 +101,7 @@ const Home: NextPage = () => {
 
 
                          {/* Landing pages */} 
-            <div className="snap-start max-w-5xl pb-28  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-[#BDC1A3] h-[844px] text-black dark:text-black">
+            <div className="snap-start max-w-xl  pb-28   mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-[#BDC1A3] h-[844px] text-black dark:text-black">
                 
                
             <br></br><br></br><br></br><br></br><br></br><br></br>
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
             </div>
 
                      {/* Landing pages couple */} 
-                     <div className="snap-start max-w-5xl  mx-auto bg-scroll bg-auto bg-my_bg3 bg-center h-[844px] text-black dark:text-black  mr-10 ml-10">
+                     <div className="snap-start max-w-xl  mx-auto bg-scroll bg-auto bg-my_bg3 bg-center h-[844px] text-black dark:text-black  mr-10 ml-10">
                 
                
               
@@ -274,7 +274,7 @@ const Home: NextPage = () => {
                 </div>  
 
                       {/* DATE and Location and dress code */} 
-            <div className="snap-start max-w-5xl mx-auto py-16 bg-scroll bg-[#F4F3EE] bg-auto bg-center bg-no-repeat h-[844px] p-3">
+            <div className="snap-start max-w-xl mx-auto py-16 bg-scroll bg-[#F4F3EE] bg-auto bg-center bg-no-repeat h-[844px] p-3">
             <br></br>
 
     
@@ -619,7 +619,7 @@ const Home: NextPage = () => {
 
       
                   {/* form input */} 
-            <div className="snap-start max-w-5xl  py-16 [background-position-x:-120px] [background-position-y:60px] bg-no-repeat bg-my_bg2 h-[844px] bg-cover " id="formInput">
+            <div className="snap-start max-w-xl mx-auto py-16 [background-position-x:-120px] [background-position-y:60px] bg-no-repeat bg-my_bg2 h-[844px] bg-cover " id="formInput">
               
               <br></br>
               <br></br>
