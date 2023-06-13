@@ -12,6 +12,7 @@ export default function Navbar() {
     <Head>
 
     <title>Pim & Boom Wedding</title>
+    <meta name="description" content="together forever"></meta>
     <link rel="icon" type="image/x-icon" href="/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -23,7 +24,7 @@ export default function Navbar() {
 
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white ">
  
-        <div className="flex flex-wrap justify-between items-center  mx-auto max-w-screen-xl">
+        <div className="flex flex-wrap justify-between items-center  mx-auto max-w-screen-xl ">
            
             <a className="flex items-center">
                 <img src="/pblogo.svg" className="h-14 sm:h-9" alt="Flowbite Logo" />
