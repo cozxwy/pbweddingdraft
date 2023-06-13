@@ -247,20 +247,24 @@ const Home: NextPage = () => {
                 
                 </div>
 
+                  {/* 
+                       src="https://i.imgur.com/qsXg4fK.png"
 
+                       https://i.imgur.com/FAhWiCU.png
+                  */}
                 
                 <br></br>
                 <br></br>
                 <div className='flex flex-row mx-auto my-auto  text-black dark:text-black rounded-lg  mr-10 ml-10'>
                 <div className="basis-1/2 text-center  border-black-500 mr-1 "> 
-                <img className="rounded-lg drop-shadow-lg h-auto" src="https://i.imgur.com/qsXg4fK.png" alt="image description"/>
+                <img className="rounded-lg drop-shadow-lg h-auto" src="couple2.png" alt="image description"/>
             
 
                 <p></p>
                   </div>
 
                   <div className="basis-1/2 text-center  border-black-500 ml-1 "> 
-                <img className="rounded-lg drop-shadow-lg  h-auto" src="https://i.imgur.com/FAhWiCU.png" alt="image description"/>
+                <img className="rounded-lg drop-shadow-lg  h-auto" src="couple1.png" alt="image description"/>
                     
                     <p></p>
                   </div>
@@ -451,8 +455,8 @@ const Home: NextPage = () => {
                 
                   <img className="h-16 w-16 my-auto" src="timeline1.png" alt="image description"/>   
                   </div>
-                  <div className="basis-2/5 mt-6 ">13.29</div>
-                  <div className="basis-2/5 mt-6 mr-10">แห่ขันหมาก</div>
+                  <div className="basis-2/5 mt-6 ml-5">13.29</div>
+                  <div className="basis-2/5 mt-6 mr-10 text-center  ">แห่ขันหมาก</div>
                 </div>
 
                 </div>
@@ -464,8 +468,8 @@ const Home: NextPage = () => {
                   
                     <img className="h-16 w-16 my-auto " src="timeline2.png" alt="image description"/>   
                     </div>
-                    <div className="basis-2/5 mt-5">14.35</div>
-                    <div className="basis-2/5 mr-10 mt-5">ยกน้ำชา</div>
+                    <div className="basis-2/5 mt-5 ml-5">14.35</div>
+                    <div className="basis-2/5 mr-10  mt-5 text-center">ยกน้ำชา</div>
                   </div>
   
                   </div>
@@ -477,8 +481,8 @@ const Home: NextPage = () => {
                   
                     <img className="h-16 w-16 my-auto" src="timeline3.png" alt="image description"/>   
                     </div>
-                    <div className="basis-2/5  mt-5">18.30</div>
-                    <div className="basis-2/5 mr-10">พิธีฉลองมงคลสมรส</div>
+                    <div className="basis-2/5  mt-5 ml-5">18.30</div>
+                    <div className="basis-2/5 mr-10 text-center">พิธีฉลองมงคลสมรส</div>
                   </div>
   
                   </div>
@@ -592,7 +596,7 @@ const Home: NextPage = () => {
 
                     <div className="basis-1/5 text-center ">
 
-                        <div className='bg-gray-400 rounded-t-full drop-shadow-md h-3/4'></div> 
+                        <div className='bg-gray-400 rounded-t-full shadow-md shadow-gray-400 h-3/4'></div> 
 
                         </div>
 
