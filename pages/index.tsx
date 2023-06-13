@@ -199,7 +199,7 @@ const Home: NextPage = () => {
                    
                    <div className='text-center mx-auto my-auto'> 
                     <p className='text-2xl  pr-5 text-[#8B6D5D] mt-10'>
-                        &nbsp;&nbsp;&nbsp;&nbsp;WITH GREAT JOY, WE INVITE YOU TO CELEBRATE OUR MARRIAGE&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;WITH GREAT JOY, WE INVITE YOU TO CELEBRATE OUR MARRIAGE.&nbsp;
                         </p>
                    
                    </div>
@@ -682,7 +682,7 @@ const Home: NextPage = () => {
                                   <div className="flex items-center justify-center ">
                                      
                                       <input required   autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
-                                      shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full font-sans md:font-serif" placeholder="ชื่อ นามสกุล *" />
+                                      shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full " placeholder="ชื่อ นามสกุล *" />
                                   </div>
                                   
                                   <div className="flex items-center justify-center">
@@ -748,10 +748,24 @@ const Home: NextPage = () => {
                                   <div className="flex items-center justify-center">
                                   {/*    <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-xl shadow py-3 px-2 text-white bg-indigo-600">ยืนยัน</button>  */}
                                      {/*<ButtonLoading2 /> */}
-                                    
-                  <button 
+
+
+                                     {isSuccess ?    <button 
                    type="submit"
-                   
+                    onClick={handleClickLoad}
+                    className={`flex items-center justify-center text-sm w-64 rounded-full shadow py-3 px-2 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 ${
+                      isLoading ? ' cursor-not-allowed rounded-full' : ''
+                    }`}
+                    disabled={isLoading}
+                  >
+                  
+                      ส่งข้อมูลสำรเร็จ&nbsp;&nbsp; <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+  <path strokeLinejoin="round" strokeLinecap="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+              
+                      </button> :  <button 
+                   type="submit"
                     onClick={handleClickLoad}
                     className={`flex items-center justify-center text-sm w-64 rounded-full shadow py-3 px-2 text-white bg-[#16243C] ${
                       isLoading ? 'opacity-50 cursor-not-allowed rounded-full' : ''
@@ -763,7 +777,8 @@ const Home: NextPage = () => {
                     
                     {isLoading ? 'กำลังส่งข้อมูล...': 'ลงทะเบียนร่วมงาน >'}
               
-                      </button>
+                      </button> }
+                 
               
               
               
@@ -782,7 +797,7 @@ const Home: NextPage = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1 }}
-                    className=""
+                    className="hidden"
                   >
                     <div className=" content-center mx-auto flex mr-10">
                     <div className="content-center p-4 w-64 mb-4 m-5 text-sm mx-auto text-green-900 rounded-lg bg-green-50 dark:bg-gray-100 dark:text-green-900" role="alert">
