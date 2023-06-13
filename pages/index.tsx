@@ -195,7 +195,7 @@ const Home: NextPage = () => {
 
 
 <br></br><br></br><br></br><br></br><br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black   mr-10 ml-10'>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-t-lg  mr-10 ml-10'>
                    
                    <div className='text-center mx-auto my-auto'> 
                     <p className='text-2xl  pr-5 text-[#8B6D5D] mt-10'>
@@ -232,7 +232,7 @@ const Home: NextPage = () => {
                 </div>
 
 
-                <div className='flex flex-row mx-auto my-auto bg-gray-50 dark:bg-white text-black dark:text-black  mr-10 ml-10  '>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50 dark:bg-white text-black dark:text-black  rounded-b-lg   mr-10 ml-10  '>
                    
                 <div className="basis-1/2 text-center  border-black-500 m-2 "> 
               
