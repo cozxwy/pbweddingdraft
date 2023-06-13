@@ -623,7 +623,7 @@ const Home: NextPage = () => {
 
       
                   {/* form input */} 
-            <div className="snap-start max-w-xl mx-auto py-16 [background-position-x:-70px] [background-position-y:50px] bg-no-repeat bg-my_bg2 h-[844px] bg-cover " id="formInput">
+            <div className="snap-start max-w-xl mx-auto py-16 [background-position-x:-70px] [background-position-y:50px] bg-no-repeat bg-my_bg2 h-[844px] bg-cover scroll-smooth" id="formInput">
               
               <br></br>
               <br></br>
@@ -649,14 +649,14 @@ const Home: NextPage = () => {
                        
                                   <div className="flex items-center justify-center ">
                                       <label htmlFor="name" className="sr-only">Name *</label>
-                                      <input required   autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
-                                      shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full font-sans md:font-serif" placeholder="Name *" />
+                                      <input required inputMode='none'  autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
+                                      shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full font-sans md:font-serif" placeholder="ชื่อ นามสกุล *" />
                                   </div>
                                 
                                   <div className="flex items-center justify-center">
                                       <label htmlFor="phone" className="sr-only">Phone number *</label>
                                       <input value={phone} required autoComplete="off" onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone"
-                                       className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full" placeholder="Phone number *" />
+                                       className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full" placeholder="เบอร์ติดต่อ *" />
                                   
                                   </div>
               
@@ -670,7 +670,7 @@ const Home: NextPage = () => {
                                   <div className="flex items-center justify-center">
                                   <label htmlFor="countries" className="sr-only">Select an option</label>
                                   <select id="follow" defaultValue={'default'} onChange={e => setFollow(e.target.value)}  name="follow" className="text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full">
-                                  <option value="default">Number of guest</option>
+                                  <option value="default">จำนวนผู้ติดตาม</option>
                                   <option value="0">ไม่มี</option>
                                   <option value="1">1</option>
                                   <option value="2">2</option>
@@ -687,13 +687,13 @@ const Home: NextPage = () => {
                                             <div className="flex items-center pl-3">
                                                 <input id="radioGirl" type="radio" value="girl" onChange={e => setTeam('girl')}  name="list-radio"
                                                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                                <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">Bride </label>
+                                                <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">ฝั่งเจ้าสาว</label>
                                             </div>
                                         </li>
                                         <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0  sm:border-r dark:border-gray-300 shadow-md bg-white   rounded-full">
                                             <div className="flex items-center pl-3 ">
                                                 <input id="radioBoy"  type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                                <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">Groove&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ฝั่งเจ้าบ่าว&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                             </div>
                                         </li>
                                         
