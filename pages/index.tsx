@@ -101,7 +101,7 @@ const Home: NextPage = () => {
 
 
                          {/* Landing pages */} 
-            <div className="snap-start max-w-xl  pb-28   mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-[#BDC1A3] h-[844px] text-black dark:text-black">
+            <div className="snap-start max-w-xl  pb-28  scroll-smooth  mx-auto bg-scroll bg-auto bg-center bg-no-repeat bg-white dark:bg-[#BDC1A3] h-[844px] text-black dark:text-black">
                 
                
             <br></br><br></br><br></br><br></br><br></br><br></br>
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
             </div>
 
                      {/* Landing pages couple */} 
-                     <div className="snap-start max-w-xl bg-cover  mx-auto bg-scroll bg-auto bg-my_bg3 bg-center h-[844px] text-black dark:text-black  ">
+                     <div className="snap-start max-w-xl bg-cover scroll-smooth  mx-auto bg-scroll bg-auto bg-my_bg3 bg-center h-[844px] text-black dark:text-black  ">
                 
                
               
@@ -257,14 +257,40 @@ const Home: NextPage = () => {
                 <br></br>
                 <div className='flex flex-row mx-auto my-auto  text-black dark:text-black rounded-lg  mr-10 ml-10'>
                 <div className="basis-1/2 text-center  border-black-500 mr-1 "> 
-                <img className="rounded-lg drop-shadow-lg h-auto" src="couple2.png" alt="image description"/>
+
+
+                <AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0, x : -100 }}
+      whileInView={{ opacity:1.0 , x : 0}}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
+      viewport={{ once: true }}
+      className=""> 
+            <img className="rounded-lg drop-shadow-lg h-auto" src="couple2.png" alt="image description"/>
+    </motion.div>
+  </AnimatePresence>
+
+             
             
 
                 <p></p>
                   </div>
 
                   <div className="basis-1/2 text-center  border-black-500 ml-1 "> 
-                <img className="rounded-lg drop-shadow-lg  h-auto" src="couple1.png" alt="image description"/>
+
+                  <AnimatePresence>
+            <motion.div
+      initial={{ opacity: 0, x : 200 }}
+      whileInView={{ opacity: 1.0 , x : 0}}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
+      viewport={{ once: true }}
+      className=""> 
+      <img className="rounded-lg drop-shadow-lg  h-auto" src="couple1.png" alt="image description"/>
+    </motion.div>
+  </AnimatePresence>
+
                     
                     <p></p>
                   </div>
@@ -278,7 +304,7 @@ const Home: NextPage = () => {
                 </div>  
 
                       {/* DATE and Location and dress code */} 
-            <div className="snap-start max-w-xl mx-auto py-16 bg-scroll bg-[#F4F3EE] bg-auto bg-center bg-no-repeat h-[844px] p-3">
+            <div className="snap-start max-w-xl mx-auto py-16 bg-scroll scroll-smooth bg-[#F4F3EE] bg-auto bg-center bg-no-repeat h-[844px] p-3">
             <br></br>
 
     
@@ -335,7 +361,7 @@ const Home: NextPage = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
-      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.3 }}
       viewport={{ once: true }}
       className=""> 
            <div className=' flex-row mx-auto my-auto flex bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
@@ -396,7 +422,7 @@ const Home: NextPage = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
-      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.5 }}
       viewport={{ once: true }}
       className=""> 
            <div className=' flex-row mx-auto my-auto    rounded-2xl mr-5 ml-5'>
@@ -442,7 +468,7 @@ const Home: NextPage = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
-      transition={{ type: "spring" , duration : 2 , delay:0.3 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.7 }}
       viewport={{ once: true }}
       className="">  
               <div className=' mx-auto bg-gray-50 drop-shadow-lg my-auto   dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5 pt-2'>
@@ -506,7 +532,7 @@ const Home: NextPage = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
-      transition={{ type: "spring" , duration : 2 , delay:0.1 }}
+      transition={{ type: "spring" , duration : 2 , delay:0.9 }}
       viewport={{ once: true }}
       className=""> 
            <div className=' flex-row mx-auto my-auto flex bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
@@ -567,7 +593,7 @@ const Home: NextPage = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity:1.0 }}
       exit={{ opacity: 0 }}
-      transition={{ type: "spring" , duration : 2 , delay:0.7}}
+      transition={{ type: "spring" , duration : 2 , delay:1.2}}
       viewport={{ once: true }}
       className="">  <div className='space-x-6 flex flex-row mx-auto bg-gray-50 drop-shadow-lg my-auto text-black dark:text-black   rounded-2xl mr-5 ml-5 h-24 p-3 pr-8 pt-5 pb-2'>
 
@@ -623,7 +649,7 @@ const Home: NextPage = () => {
 
       
                   {/* form input */} 
-            <div className=" snap-start max-w-xl mx-auto py-16 [background-position-x:-70px] [background-position-y:50px]
+            <div className=" snap-start max-w-xl mx-auto py-16 scroll-smooth [background-position-x:-70px] [background-position-y:50px]
              bg-no-repeat bg-my_bg2 h-[844px] bg-cover scroll-smooth overflow-y-hidden" id="formInput">
               
               <br></br>
@@ -632,11 +658,12 @@ const Home: NextPage = () => {
               
               
               <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="">
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity:1.0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ type: "spring" , duration : 5 ,delay:0 }}
+                        viewport={{ once: true }}
+                        className=""> 
                     <div className="">
                     
                   <img className="h-36 my-auto mx-auto" src="rspv.png" alt="image description"/>   
@@ -753,8 +780,8 @@ const Home: NextPage = () => {
                     transition={{ duration: 1 }}
                     className=""
                   >
-                    <div className=" content-center ">
-                    <div className="content-center p-4 w-64 mb-4 m-5 text-sm text-green-900 rounded-lg bg-green-50 dark:bg-gray-100 dark:text-green-900" role="alert">
+                    <div className=" content-center mx-auto flex mr-10">
+                    <div className="content-center p-4 w-64 mb-4 m-5 text-sm mx-auto text-green-900 rounded-lg bg-green-50 dark:bg-gray-100 dark:text-green-900" role="alert">
                           <span className="font-medium pl-6">ลงทะเบียนสำเร็จ !</span> แล้วพบกันในงานวันที่ <u>26.08.2023</u>
                           </div>
                               
