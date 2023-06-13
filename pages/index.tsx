@@ -354,7 +354,7 @@ const Home: NextPage = () => {
 
 
 <br></br>
-
+<Link href="https://goo.gl/maps/iGLY2BsHSaXyP6Ym9">
 
 <AnimatePresence>
             <motion.div
@@ -408,7 +408,7 @@ const Home: NextPage = () => {
 
 
 
-
+</Link>
            
                 
                 
@@ -433,7 +433,8 @@ const Home: NextPage = () => {
                     <div className="basis-1 text-center my-auto "> 
 
                      
-            <Link href="https://goo.gl/maps/iGLY2BsHSaXyP6Ym9"> <button type="button" className=" w-50  rounded-full 
+            <Link href="https://goo.gl/maps/iGLY2BsHSaXyP6Ym9">
+               <button type="button" className=" w-50  rounded-full 
                     text-[#16243C] hover:text-white border 
                      border-[#16243C] hover:bg-[#16243C] focus:ring-4 
                      focus:outline-none focus:ring-[#16243C] font-medium 
@@ -535,6 +536,8 @@ const Home: NextPage = () => {
       transition={{ type: "spring" , duration : 2 , delay:0.9 }}
       viewport={{ once: true }}
       className=""> 
+
+      <Link href='https://www.instagram.com/explore/tags/primoob/'>
            <div className=' flex-row mx-auto my-auto flex bg-gray-50 drop-shadow-lg  dark:bg-white text-black dark:text-black rounded-2xl mr-5 ml-5'>
                         
                     <div className="basis-5/12 text-center ml-5"> 
@@ -580,6 +583,7 @@ const Home: NextPage = () => {
 
         
                 </div>
+                </Link>
     </motion.div>
   </AnimatePresence>
                 
