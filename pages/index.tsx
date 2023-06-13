@@ -623,7 +623,8 @@ const Home: NextPage = () => {
 
       
                   {/* form input */} 
-            <div className="snap-start max-w-xl mx-auto py-16 [background-position-x:-70px] [background-position-y:50px] bg-no-repeat bg-my_bg2 h-[844px] bg-cover scroll-smooth" id="formInput">
+            <div className=" snap-start max-w-xl mx-auto py-16 [background-position-x:-70px] [background-position-y:50px]
+             bg-no-repeat bg-my_bg2 h-[844px] bg-cover scroll-smooth overflow-y-hidden" id="formInput">
               
               <br></br>
               <br></br>
@@ -648,27 +649,27 @@ const Home: NextPage = () => {
                     <form className=" justify-center space-y-4 " onSubmit={handleSubmit}>
                        
                                   <div className="flex items-center justify-center ">
-                                      <label htmlFor="name" className="sr-only">Name *</label>
+                                     
                                       <input required   autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
                                       shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full font-sans md:font-serif" placeholder="ชื่อ นามสกุล *" />
                                   </div>
-                                
+                                  
                                   <div className="flex items-center justify-center">
-                                      <label htmlFor="phone" className="sr-only">Phone number *</label>
+                          
                                       <input value={phone} required autoComplete="off" onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone"
                                        className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full" placeholder="เบอร์ติดต่อ *" />
                                   
                                   </div>
               
                                   <div className="flex items-center justify-center">
-                                      <label htmlFor="license_plate" className="sr-only">ทะเบียนรถ</label>
+                                    
                                       <input value={license_plate}  autoComplete="off" onChange={e => setlicense_plate(e.target.value)} type="text" 
                                       name="license_plate" id="license_plate" 
                                       className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full" placeholder="ทะเบียนรถยนต์" />
                                   </div>
               
                                   <div className="flex items-center justify-center">
-                                  <label htmlFor="countries" className="sr-only">Select an option</label>
+                              
                                   <select id="follow" defaultValue={'default'} onChange={e => setFollow(e.target.value)}  name="follow" className="text-slate-500 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full">
                                   <option value="default">จำนวนผู้ติดตาม</option>
                                   <option value="0">ไม่มี</option>
@@ -681,19 +682,19 @@ const Home: NextPage = () => {
               
                                   <div className="flex items-center justify-center">
                                
-                                    <h3 className="sr-only">Identification</h3>
+                                 
                                     <ul className=" space-x-4 text-slate-500 focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 ">
                                         <li className=" w-1/2 inline-block  border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-300 shadow-md  bg-white rounded-full">
                                             <div className="flex items-center pl-3">
                                                 <input id="radioGirl" type="radio" value="girl" onChange={e => setTeam('girl')}  name="list-radio"
                                                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                                <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">ฝั่งเจ้าสาว</label>
+                                                <label htmlFor="radioGirl" className="w-full py-3 ml-2 text-sm font-medium text-gray-900 text-slate-500">ทีมเจ้าสาว</label>
                                             </div>
                                         </li>
                                         <li className=" w-39  inline-block border-b border-gray-200 sm:border-b-0  sm:border-r dark:border-gray-300 shadow-md bg-white   rounded-full">
                                             <div className="flex items-center pl-3 ">
                                                 <input id="radioBoy"  type="radio" value="boy" onChange={e => setTeam('boy')}  name="list-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                                                <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ฝั่งเจ้าบ่าว&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                <label htmlFor="radioBoy" className="w-full py-3 ml-2 text-sm font-medium text-gray-900  text-slate-500">ทีมจ้าบ่าว&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                             </div>
                                         </li>
                                         
@@ -708,31 +709,8 @@ const Home: NextPage = () => {
               
               
               
-                                {/*
-                                  <div className="flex items-center justify-center">
-                                      <label htmlFor="message" className="sr-only">อวยพร</label>
-                                      <textarea value={message}  autoComplete="off" onChange={e => setMessage(e.target.value)} id="message" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-xl" placeholder="อวยพรบ่าวสาว" />
-                               
-                                  </div>
 
-                                  */}
-
-
-                                  {/*  <div className="flex items-center justify-center  ">
-              
-              
-                                  <label className="relative inline-flex items-center cursor-pointer">
-                                        <input type="checkbox" value="" className="sr-only peer" required />
-                                        <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                                        <span className="ml-3 text-sm font-medium text-gray-700 dark:text-gray-700">ยินดีให้ใช้และเปิดเผยข้อมูลส่วนบุคคล</span> 
-                                        
-                                    </label>
-              
-              
-                                
-                                  </div>*/}
-
-<br></br>
+                                  <br></br>
                                   <br></br>
                                   <br></br>
               
@@ -759,6 +737,9 @@ const Home: NextPage = () => {
               
               
                                   </div>
+                                  
+
+
                     </form>
               
                     </div>
@@ -800,8 +781,8 @@ const Home: NextPage = () => {
              </div>
 
                         {/* stop scroll*/} 
-             <div className="snap-stop max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3 " id="">
-                </div>     
+              {/* <div className="snap-stop overflow-auto max-w-5xl mx-auto py-16 bg-scroll bg-white bg-auto bg-center bg-no-repeat h-[844px] p-3 h-1" id="">
+                </div>     */} 
             
         </main>
     )
