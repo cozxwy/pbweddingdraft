@@ -10,12 +10,12 @@ export default function Navbar() {
 
           
     <Head>
-    <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet"> </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet"/>
     </Head>
 
-    
+
     <link rel="shortcut icon" href="/public/pblogo.svg" />
 
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white ">
