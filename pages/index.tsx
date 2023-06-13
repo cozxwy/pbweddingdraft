@@ -169,7 +169,7 @@ const Home: NextPage = () => {
             </div>
 
                      {/* Landing pages couple */} 
-                     <div className="snap-start max-w-xl  mx-auto bg-scroll bg-auto bg-my_bg3 bg-center h-[844px] text-black dark:text-black  mr-10 ml-10">
+                     <div className="snap-start max-w-xl bg-cover  mx-auto bg-scroll bg-auto bg-my_bg3 bg-center h-[844px] text-black dark:text-black  ">
                 
                
               
@@ -195,7 +195,7 @@ const Home: NextPage = () => {
 
 
 <br></br><br></br><br></br><br></br><br></br>
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg '>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg  mr-10 ml-10'>
                    
                    <div className='text-center mx-auto my-auto'> 
                     <p className='text-2xl  pr-5 text-[#8B6D5D] mt-10'>
@@ -207,7 +207,7 @@ const Home: NextPage = () => {
                 </div>
 
 
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black    '>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black   mr-10 ml-10 '>
                    
                    <div className='text-center mx-auto my-auto'> 
                    <AnimatePresence>
@@ -217,7 +217,7 @@ const Home: NextPage = () => {
       exit={{ opacity: 0 }}
       transition={{ type: "spring" , duration : 5 ,delay:0 }}
       viewport={{ once: true }}
-      className=""> 
+      className=" "> 
                   <img className="h-20 my-auto " src="ring.png" alt="image description"/>   
                 {/* <div className='text-center mx-auto my-auto  pt-28'> <p className='text-5xl font-sans lg:font-serif rotate-350'>Pimchanok</p>
                 <p className={styles.testFont}  >abcd</p>
@@ -232,7 +232,7 @@ const Home: NextPage = () => {
                 </div>
 
 
-                <div className='flex flex-row mx-auto my-auto bg-gray-50   dark:bg-white text-black dark:text-black rounded-lg '>
+                <div className='flex flex-row mx-auto my-auto bg-gray-50 dark:bg-white text-black dark:text-black rounded-lg mr-10 ml-10  '>
                    
                 <div className="basis-1/2 text-center  border-black-500 m-2 "> 
               
@@ -251,7 +251,7 @@ const Home: NextPage = () => {
                 
                 <br></br>
                 <br></br>
-                <div className='flex flex-row mx-auto my-auto  text-black dark:text-black rounded-lg  '>
+                <div className='flex flex-row mx-auto my-auto  text-black dark:text-black rounded-lg  mr-10 ml-10'>
                 <div className="basis-1/2 text-center  border-black-500 mr-1 "> 
                 <img className="rounded-lg drop-shadow-lg h-auto" src="https://i.imgur.com/qsXg4fK.png" alt="image description"/>
             
