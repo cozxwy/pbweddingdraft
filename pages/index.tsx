@@ -407,7 +407,7 @@ const Home: NextPage = () => {
                     <div className="basis-1 text-center my-auto "> 
 
                      
-            <Link href="https://goo.gl/maps/u6BUnCyKnZ88fEPs7"> <button type="button" className=" w-50  rounded-full 
+            <Link href="https://goo.gl/maps/iGLY2BsHSaXyP6Ym9"> <button type="button" className=" w-50  rounded-full 
                     text-[#16243C] hover:text-white border 
                      border-[#16243C] hover:bg-[#16243C] focus:ring-4 
                      focus:outline-none focus:ring-[#16243C] font-medium 
@@ -623,7 +623,7 @@ const Home: NextPage = () => {
 
       
                   {/* form input */} 
-            <div className="snap-start max-w-xl mx-auto py-16 [background-position-x:-120px] [background-position-y:60px] bg-no-repeat bg-my_bg2 h-[844px] bg-cover " id="formInput">
+            <div className="snap-start max-w-xl mx-auto py-16 [background-position-x:-70px] [background-position-y:50px] bg-no-repeat bg-my_bg2 h-[844px] bg-cover " id="formInput">
               
               <br></br>
               <br></br>
