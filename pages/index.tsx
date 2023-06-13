@@ -759,7 +759,7 @@ const Home: NextPage = () => {
                     disabled={isLoading}
                   >
                   
-                      ส่งข้อมูลสำรเร็จ&nbsp;&nbsp; <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+                      ส่งข้อมูลสำเร็จ&nbsp;&nbsp; <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
   <path strokeLinejoin="round" strokeLinecap="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>
 
