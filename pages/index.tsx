@@ -682,7 +682,7 @@ const Home: NextPage = () => {
                                   <div className="flex items-center justify-center ">
                                      
                                       <input required   autoComplete="off" value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="
-                                      shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full " placeholder="ชื่อ นามสกุล *" />
+                                      shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-full " placeholder="ชื่อ นามสกุล (ชื่อเล่น) *" />
                                   </div>
                                   
                                   <div className="flex items-center justify-center">
