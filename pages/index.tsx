@@ -613,20 +613,26 @@ const Home: NextPage = () => {
 
                 <div className="basis-1/5 text-center">
 
-                    <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'></div> 
+                    <div className='bg-slate-900 rounded-t-full shadow-md shadow-slate-900 h-3/4'>
+                      <p className='text-white pt-4'>กรม</p>
+                    </div> 
                 
                 </div>
 
                 <div className="basis-1/5 text-center ">
 
-                    <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'></div> 
+                    <div className='bg-blue-950  rounded-t-full shadow-md shadow-blue-950 h-3/4'>
+                          <p className='text-white pt-4'>น้ำเงิน</p>
+                    </div> 
 
                     </div>
 
 
                     <div className="basis-1/5 text-center ">
 
-                        <div className='bg-gray-400 rounded-t-full shadow-md shadow-gray-400 h-3/4'></div> 
+                        <div className='bg-gray-400 rounded-t-full shadow-md shadow-gray-400 h-3/4'>
+                          <p className='text-white pt-4'>เทา</p>
+                        </div> 
 
                         </div>
 
@@ -692,7 +698,7 @@ const Home: NextPage = () => {
                                   
                                   </div>
               
-                                  <div className="flex items-center justify-center">
+                                  <div className="flex items-center justify-center hidden">
                                     
                                       <input value={license_plate}  autoComplete="off" onChange={e => setlicense_plate(e.target.value)} type="text" 
                                       name="license_plate" id="license_plate" 
